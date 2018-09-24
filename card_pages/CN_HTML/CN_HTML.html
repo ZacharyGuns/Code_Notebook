@@ -7,9 +7,66 @@
     <title>Code_NoteBook: HTML</title>
 </head>
 <body>
-    <h1>hello world</h1>
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id vestibulum felis. Aliquam vulputate molestie est, vel tincidunt nulla gravida vel. Nam mollis tempus massa sit amet hendrerit. Vivamus porta non purus sed maximus. Quisque porttitor fringilla suscipit. Nunc feugiat at velit eget scelerisque. Vestibulum feugiat libero nec est accumsan, id pellentesque ipsum efficitur. Nullam tincidunt dolor ut eros auctor placerat. Maecenas sit amet magna arcu. Quisque ornare tortor sed ante vestibulum dignissim. Suspendisse interdum eros nec commodo vulputate. Praesent ante justo, laoreet sit amet nibh iaculis, convallis fringilla justo. Phasellus ultricies sapien et magna scelerisque laoreet. Aliquam dapibus accumsan dolor in tristique.</p>
     <p>Suspendisse venenatis lectus id massa scelerisque dapibus. Vivamus auctor pulvinar massa, in egestas risus dapibus vel. Nullam egestas turpis odio, vel convallis nisl tincidunt non. Proin placerat venenatis posuere. Ut tortor justo, molestie eu neque ac, lacinia dictum tellus. Donec vitae libero nec sapien imperdiet lacinia quis quis nunc. Sed posuere, mi sed elementum viverra, dui felis venenatis lectus, a sollicitudin dolor urna sit amet sem. Donec et condimentum lectus, sed auctor mauris. Vestibulum eu feugiat nisl.</p>
-    <img src="../../assets/images/zebra.jpg">
+    <a href="https://www.google.com/search?q=zebra&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj6s7OEns3dAhWH6YMKHUM1ACkQ_AUIDigB" target="_blank">Zebra Images</a>
+    <img src="../../assets/images/zebra.jpg" width="300">
+    <button>Click me</button>
+    <ul>
+        <li>Unordered</li>
+        <li>Lists</li>
+        <li>Use</li>
+        <li>Bullets</li>
+    </ul>
+    <ol>
+        <li>Ordered</li>
+        <li>Lists</li>
+        <li>Use</li>
+        <li>Numbers</li>
+    </ol>
+    <h1 style="color:red;font-family:futura;text-align:center;">Styles provide CSS options for a single tag using only HTML</h1>
+    <p><b>This text is bold</b></p>
+    <p><i>This text is italic</i></p>
+    <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+    <blockquote>This is how to display a long quote. It is formatted differently from normal text or paragraphs.</blockquote>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+    <address>
+        ### Street<br> 
+        City, State<br>
+        Zip Code<br>
+        Country
+    </address>
+    <p>This line is written left to right like normal</p>
+    <bdo dir="rtl">This line is written from right to left</bdo>
+    <h1 style="background-color:red;">Red</h1>
+    <h1 style="background-color:orange;">Orange</h1>
+    <h1 style="background-color:yellow;">Yellow</h1>
+    <h1 style="background-color:green;">Green</h1>
+    <h1 style="background-color:blue;">Blue</h1>
+    <h1 style="background-color:violet;">Violet</h1>
+    <h1 style="border:2px solid red;">This one has a frame</h1>
+    
+    
+    <div id="rgbresult" style="font-size: 20px; font-weight: bold; font-family: Consolas, &quot;Courier New&quot;, Courier, monospace; line-height: 80px; background-color: rgb(0, 0, 0);">
+        <p id="rgbresulttext" style="color: rgb(255, 255, 255);">rgb(0, 0, 0)</p>
+    </div>
+
+    <p>RED</p>
+    <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideRed" name="slideRed" value="255" min="0" max="255">
+    <div id="valRed2" xstyle="background-color:red;border-radius:5px;color:white;opacity:0.8">255</div>
+
+    <p>GREEN</p>
+    <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideGreen" name="slideGreen" value="99" min="0" max="255">
+    <div id="valGreen2" xstyle="background-color:#00ff00;border-radius:5px;opacity:0.8">0</div>
+
+    <p>BLUE</p>
+    <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideBlue" name="slideBlue" value="71" min="0" max="255">
+    <div id="valBlue2" xstyle="background-color:blue;border-radius:5px;color:white;opacity:0.8">0</div>
 </body>
 </html>

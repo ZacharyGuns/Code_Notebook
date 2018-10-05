@@ -27,7 +27,7 @@
 
     <p>Select an animal from the list.</p>
 
-    <select id="mySelect" onchange="myFunction()">
+    <select id="mySelect" onchange="myFunction1()">
         <option value="zebra">zebra
         <option value="tiger">tiger
         <option value="shark">shark
@@ -36,12 +36,25 @@
 
     <p>When you select an animal, a function is triggered which outputs the value of the selected animal.</p>
 
-    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <p>Click the button for a prompt</p>
+    <button onclick="myFunction2()">Try it</button>
+
+    <p id="demo2"></p>
 
     <script>
-        function myFunction() {
+        function myFunction1() {
             var x = document.getElementById("mySelect").value;
-            document.getElementById("demo").innerHTML = "You selected: " + x;
+            document.getElementById("demo1").innerHTML = "You selected: " + x;
+        }
+
+        function myFunction2() {
+            var person = prompt("Please enter your name");
+            if (person != null) {
+                document.getElementById("demo2").innerHTML =
+                "Hello " + person + "! How are you today?";
+            }
         }
     </script>
 </body>

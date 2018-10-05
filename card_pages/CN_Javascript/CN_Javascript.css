@@ -6,6 +6,15 @@ p {
     font-family: Futura;
 }
 
+form {
+    font-family: Futura;
+}
+
 #zebra {
     width: 300px;
+}
+
+.container{
+    border: solid red 2px;
+    margin-bottom: 5px;
 }

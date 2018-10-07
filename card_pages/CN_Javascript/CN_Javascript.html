@@ -87,8 +87,8 @@
 
         <p>Conditionals are If/Else statements. A standard If/Else only has two possible outcomes. Ex: If true, return A. Else return B.
             If the conditional is true, then we should see A returned to us. However, if the conditional is not true, else false, it will return 
-            B instead. In the following example we are using a time conditional. If the time is less than 12 pm, return Good day! Else, return
-            Good night!
+            B instead. In the following example we are using a time conditional. If the time is less than 18:00 hours (12am-6pm), return Good day! Else, return
+            Good night! (6pm-12am).
         </p>
 
         <p id="ifElse"></p>
@@ -153,7 +153,7 @@
 
         document.getElementById("loop2").innerHTML = text;
 
-        if (new Date().getHours() < 12) {
+        if (new Date().getHours() < 18) {
             document.getElementById("ifElse").innerHTML = "Good day!";
         }
         else {

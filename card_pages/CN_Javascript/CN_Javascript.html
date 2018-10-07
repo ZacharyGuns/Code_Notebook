@@ -66,14 +66,19 @@
     </div>
 
     <div class="container">
-            <p>For Loops</p>
+        <p>For Loops</p>
 
-            <p>The list of cars is not in html, is is held by an array variable in javascript.
-                In the html, a p tag contains an id that calls the list of cars from the javascript.
-                The for loop is told to read every index of the array and return it to the id in the html so we can read it here.
-            </p>
+        <p>The list of cars is not in html, is is held by an array variable in javascript. In the html, a p tag contains an
+            id that calls the list of cars from the javascript. The for loop is told to read every index of the array and
+            return it to the id in the html so we can read it here.
+        </p>
 
-            <p id="loop1"></p>
+        <p id="loop1"></p>
+
+        <p>In this loop we have the exact same list as the example above, only this time we are telling the loop to read through the array 
+            and return every index after 2. Because of this, we will not see Ford or Lexus appear in the following list.
+        </p>
+        <p id="loop2"></p>
     </div>
 
     <!-- =============================================================================================================== -->
@@ -117,12 +122,23 @@
             document.getElementById("result").innerHTML = num1 / num2;
         }
 
-        var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-            var text = "";
-            for (i = 0; i < cars.length; i++) {
-                text += cars[i] + "<br>";
-            }
-            document.getElementById("loop1").innerHTML = text;
+        var cars1 = ["Ford", "Lexus", "Jeep", "Dodge", "Honda"];
+        var text = "";
+        for (i = 0; i < cars1.length; i++) {
+            text += cars1[i] + "<br>";
+        }
+        document.getElementById("loop1").innerHTML = text;
+
+        var cars2 = ["Ford", "Lexus", "Jeep", "Dodge", "Honda"];
+        var i = 2;
+        var len = cars2.length;
+        var text = "";
+
+        for (; i < len; i++) {
+            text += cars2[i] + "<br>";
+        }
+
+        document.getElementById("loop2").innerHTML = text;
 
     </script>
 </body>

@@ -65,6 +65,20 @@
         </p>
     </div>
 
+    <div class="container">
+            <p>For Loops</p>
+
+            <p>The list of cars is not in html, is is held by an array variable in javascript.
+                In the html, a p tag contains an id that calls the list of cars from the javascript.
+                The for loop is told to read every index of the array and return it to the id in the html so we can read it here.
+            </p>
+
+            <p id="loop1"></p>
+    </div>
+
+    <!-- =============================================================================================================== -->
+    <!-- =============================================================================================================== -->
+
     <script>
         function myFunction1() {
             var x = document.getElementById("mySelect").value;
@@ -102,6 +116,14 @@
             num2 = document.getElementById("secondNumber").value;
             document.getElementById("result").innerHTML = num1 / num2;
         }
+
+        var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+            var text = "";
+            for (i = 0; i < cars.length; i++) {
+                text += cars[i] + "<br>";
+            }
+            document.getElementById("loop1").innerHTML = text;
+
     </script>
 </body>
 

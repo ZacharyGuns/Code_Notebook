@@ -75,10 +75,23 @@
 
         <p id="loop1"></p>
 
-        <p>In this loop we have the exact same list as the example above, only this time we are telling the loop to read through the array 
-            and return every index after 2. Because of this, we will not see Ford or Lexus appear in the following list.
+        <p>In this loop we have the exact same list as the example above, only this time we are telling the loop to read through
+            the array and return every index after 2. Because of this, we will not see Ford or Lexus appear in the following
+            list.
         </p>
         <p id="loop2"></p>
+    </div>
+
+    <div class="container">
+        <p>Conditional</p>
+
+        <p>Conditionals are If/Else statements. A standard If/Else only has two possible outcomes. Ex: If true, return A. Else return B.
+            If the conditional is true, then we should see A returned to us. However, if the conditional is not true, else false, it will return 
+            B instead. In the following example we are using a time conditional. If the time is less than 12 pm, return Good day! Else, return
+            Good night!
+        </p>
+
+        <p id="ifElse"></p>
     </div>
 
     <!-- =============================================================================================================== -->
@@ -140,6 +153,12 @@
 
         document.getElementById("loop2").innerHTML = text;
 
+        if (new Date().getHours() < 12) {
+            document.getElementById("ifElse").innerHTML = "Good day!";
+        }
+        else {
+            document.getElementById("ifElse").innerHTML = "Good night!";
+        }
     </script>
 </body>
 

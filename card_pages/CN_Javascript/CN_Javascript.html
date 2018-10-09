@@ -26,6 +26,8 @@
     <img src="../../assets/images/zebra.jpg" id="zebra">
 
     <div class="container">
+        <h3>Drop Downs</h3>
+
         <p>Select an animal from the list.</p>
 
         <select id="mySelect" onchange="myFunction1()">
@@ -41,6 +43,8 @@
     </div>
 
     <div class="container">
+        <h3>Prompts</h3>
+
         <p>Click the button for a prompt</p>
         <button onclick="myFunction2()">Try it</button>
 
@@ -48,6 +52,8 @@
     </div>
 
     <div class="container">
+        <h3>Operators</h3>
+
         <form>
             1st Number :
             <input type="text" id="firstNumber" />
@@ -66,7 +72,7 @@
     </div>
 
     <div class="container">
-        <p>For Loops</p>
+        <h3>For Loops</h3>
 
         <p>The list of cars is not in html, is is held by an array variable in javascript. In the html, a p tag contains an
             id that calls the list of cars from the javascript. The for loop is told to read every index of the array and
@@ -83,15 +89,24 @@
     </div>
 
     <div class="container">
-        <p>Conditional</p>
+        <h3>Conditionals</h3>
 
-        <p>Conditionals are If/Else statements. A standard If/Else only has two possible outcomes. Ex: If true, return A. Else return B.
-            If the conditional is true, then we should see A returned to us. However, if the conditional is not true, else false, it will return 
-            B instead. In the following example we are using a time conditional. If the time is less than 18:00 hours (12am-6pm), return Good day! Else, return
-            Good night! (6pm-12am).
+        <p>
+            Conditionals are If/Else statements. A standard If/Else only has two possible outcomes. Ex: If true, return A. Else return
+            B. If the conditional is true, then we should see A returned to us. However, if the conditional is not true,
+            else false, it will return B instead. In the following example we are using a time conditional. If the time is
+            less than 18:00 hours (12am-6pm), return Good day! Else, return Good night! (6pm-12am).
         </p>
 
-        <p id="ifElse"></p>
+        <p id="ifElse1"></p>
+
+        <p>
+            This is an If, Else if, Else coniditional. Conditionals that contain Else if's can have any number of possible outcomes
+            depending on how many Else if's you include. In this case, rather than having only Good day and Good night as possible 
+            outcomes for the time, we instead have Good morning (12am-12pm), Good afternoon (12pm-6pm) and Good evening (6pm-12am).
+        </p>
+
+        <p id="ifElse2"></p>
     </div>
 
     <!-- =============================================================================================================== -->
@@ -154,11 +169,21 @@
         document.getElementById("loop2").innerHTML = text;
 
         if (new Date().getHours() < 18) {
-            document.getElementById("ifElse").innerHTML = "Good day!";
+            document.getElementById("ifElse1").innerHTML = "Good day!";
         }
         else {
-            document.getElementById("ifElse").innerHTML = "Good night!";
+            document.getElementById("ifElse1").innerHTML = "Good night!";
         }
+
+        var time = new Date().getHours();
+        if (time < 12) {
+            greeting = "Good morning!";
+        } else if (time < 18) {
+            greeting = "Good afternoon!";
+        } else {
+            greeting = "Good evening!";
+        }
+        document.getElementById("ifElse2").innerHTML = greeting;
     </script>
 </body>
 

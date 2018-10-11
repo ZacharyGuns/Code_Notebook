@@ -101,12 +101,33 @@
         <p id="ifElse1"></p>
 
         <p>
-            This is an If, Else if, Else coniditional. Conditionals that contain Else if's can have any number of possible outcomes
-            depending on how many Else if's you include. In this case, rather than having only Good day and Good night as possible 
+            This is an If, Else if, Else coniditional. Conditionals that contain Else if's can have any number of possible outcomes depending
+            on how many Else if's you include. In this case, rather than having only Good day and Good night as possible
             outcomes for the time, we instead have Good morning (12am-12pm), Good afternoon (12pm-6pm) and Good evening (6pm-12am).
         </p>
 
         <p id="ifElse2"></p>
+    </div>
+
+    <div class="container">
+        <h3>Switch Statement</h3>
+
+        <p>Switch Statements are evaluated once. The value of the expression is compared with the values of each case. If there
+            is a match, the associated block of code is executed. In this example, there are 7 cases, one for each day of
+            the week. Once the expression is called, it checks which day of the week it currently is and returns the correct
+            one. At the end of each Switch Statement is the "break" keyword. Once the code runs reaches the "break" keyword,
+            it breaks out of the switch block and stops the Switch Statement.
+        </p>
+
+        <p id="todayIs"></p>
+
+        <p>
+            The "default" keyword specifies the code to run if there is no case match. In the following example, the expression is only
+            given two specific cases to search through, Saturday and Sunday. If the current day of the week is neither Saturday
+            nor Sunday, it instead runs the default for all week days Monday through Friday.
+        </p>
+
+        <p id="defaultDay"></p>
     </div>
 
     <!-- =============================================================================================================== -->
@@ -184,6 +205,44 @@
             greeting = "Good evening!";
         }
         document.getElementById("ifElse2").innerHTML = greeting;
+
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.getElementById("todayIs").innerHTML = "Today is " + day;
+
+        var text;
+        switch (new Date().getDay()) {
+            case 6:
+                text = "Today is Saturday";
+                break;
+            case 0:
+                text = "Today is Sunday";
+                break;
+            default:
+                text = "Looking forward to the Weekend";
+        }
+        document.getElementById("defaultDay").innerHTML = text;
     </script>
 </body>
 

@@ -139,6 +139,8 @@
             document.getElementById("demo1").innerHTML = "You selected: " + x;
         }
 
+        //=============================================================================
+
         function myFunction2() {
             var person = prompt("Please enter your name");
             if (person != null) {
@@ -146,6 +148,8 @@
                     "Hello " + person + "! How are you today?";
             }
         }
+
+        //=============================================================================
 
         function addBy() {
             num1 = document.getElementById("firstNumber").value;
@@ -171,6 +175,8 @@
             document.getElementById("result").innerHTML = num1 / num2;
         }
 
+        //=============================================================================
+
         var cars1 = ["Ford", "Lexus", "Jeep", "Dodge", "Honda"];
         var text = "";
         for (i = 0; i < cars1.length; i++) {
@@ -186,6 +192,8 @@
         for (; i < len; i++) {
             text += cars2[i] + "<br>";
         }
+
+        //=============================================================================
 
         document.getElementById("loop2").innerHTML = text;
 
@@ -205,6 +213,8 @@
             greeting = "Good evening!";
         }
         document.getElementById("ifElse2").innerHTML = greeting;
+
+        //=============================================================================
 
         var day;
         switch (new Date().getDay()) {

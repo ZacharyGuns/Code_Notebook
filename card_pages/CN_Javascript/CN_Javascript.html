@@ -124,10 +124,23 @@
         <p>
             The "default" keyword specifies the code to run if there is no case match. In the following example, the expression is only
             given two specific cases to search through, Saturday and Sunday. If the current day of the week is neither Saturday
-            nor Sunday, it instead runs the default for all week days Monday through Friday.
+            nor Sunday, it instead runs the default for all week days Monday through Friday. The statement will return "Today is 
+            Saturday" or "Today is Sunday" for each appropriate weekend day. For Monday through Friday, it will return "Looking forward 
+            to the weekend."
         </p>
 
         <p id="defaultDay"></p>
+
+        <p>
+            The following example uses common code blocks. the keys for Saturday and Sunday, Monday-Wednesday and Thursday and Friday
+            all share the same values. If the current day of the week lands on either Saturday or Sunday, it will read and
+            return the same case value, displaying that "It is the weekend." If it is Monday, Tuesday or Wednesday, it will
+            read the same case value and display "Looking forward to the weekend." If it is Thursday or Friday, it will read
+            the same case value and display "Soon it is the weekend." By grouping keys with same values, it helps create
+            "dry" code.
+        </p>
+
+        <p id="commonDay"></p>
     </div>
 
     <!-- =============================================================================================================== -->
@@ -253,6 +266,21 @@
                 text = "Looking forward to the Weekend";
         }
         document.getElementById("defaultDay").innerHTML = text;
+
+        var text;
+        switch (new Date().getDay()) {
+            case 4:
+            case 5:
+                text = "Soon it is Weekend";
+                break;
+            case 0:
+            case 6:
+                text = "It is Weekend";
+                break;
+            default:
+                text = "Looking forward to the Weekend";
+        }
+        document.getElementById("commonDay").innerHTML = text;
     </script>
 </body>
 

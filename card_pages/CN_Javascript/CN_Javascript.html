@@ -85,7 +85,16 @@
             the array and return every index after 2. Because of this, we will not see Ford or Lexus appear in the following
             list.
         </p>
+
         <p id="loop2"></p>
+
+        <p>
+            For Loops can also contain breaks. In the following example, the loop is told to return every number less than 10. However,
+            an "if" condition is included, saying that if the loop reaches a number strictly equal to 3 it must break the
+            loop. This is why only 0, 1 and 2 appear.
+        </p>
+
+        <p id="loopBreak"></p>
     </div>
 
     <div class="container">
@@ -124,9 +133,9 @@
         <p>
             The "default" keyword specifies the code to run if there is no case match. In the following example, the expression is only
             given two specific cases to search through, Saturday and Sunday. If the current day of the week is neither Saturday
-            nor Sunday, it instead runs the default for all week days Monday through Friday. The statement will return "Today is 
-            Saturday" or "Today is Sunday" for each appropriate weekend day. For Monday through Friday, it will return "Looking forward 
-            to the weekend."
+            nor Sunday, it instead runs the default for all week days Monday through Friday. The statement will return "Today
+            is Saturday" or "Today is Sunday" for each appropriate weekend day. For Monday through Friday, it will return
+            "Looking forward to the weekend."
         </p>
 
         <p id="defaultDay"></p>
@@ -206,9 +215,18 @@
             text += cars2[i] + "<br>";
         }
 
+        document.getElementById("loop2").innerHTML = text;
+
+        var text = "";
+        var i;
+        for (i = 0; i < 10; i++) {
+            if (i === 3) { break; }
+            text += "The number is " + i + "<br>";
+        }
+        document.getElementById("loopBreak").innerHTML = text;
+
         //=============================================================================
 
-        document.getElementById("loop2").innerHTML = text;
 
         if (new Date().getHours() < 18) {
             document.getElementById("ifElse1").innerHTML = "Good day!";

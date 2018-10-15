@@ -152,6 +152,20 @@
         <p id="commonDay"></p>
     </div>
 
+    <div class="container">
+        <h3>Math.random</h3>
+
+        <p>
+            Math.random is a why to return a random number after a function is called. You can control the range of numbers that 
+            can be selected by setting a the minimum and maximum numbers that can be picked. In the following example, clicking 
+            the button will return any random number that is greater than or equal to 1 or less than or equal to 10.
+        </p>
+
+        <p id="mathRandom">0</p>
+
+        <button onclick="mathRandomBtn()">Randomize</button>
+    </div>
+
     <!-- =============================================================================================================== -->
     <!-- =============================================================================================================== -->
 
@@ -299,6 +313,12 @@
                 text = "Looking forward to the Weekend";
         }
         document.getElementById("commonDay").innerHTML = text;
+
+        //=============================================================================
+
+        function mathRandomBtn() {
+            document.getElementById("mathRandom").innerHTML = Math.floor(Math.random() * 10) + 1;
+        }
     </script>
 </body>
 

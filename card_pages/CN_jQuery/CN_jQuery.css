@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+}
+
+p {
+    font-family: Futura;
+}
+
+h3 {
+    font-family: Futura;
+}
+
+.container{
+    border: solid red 2px;
+    margin-bottom: 5px;
+}

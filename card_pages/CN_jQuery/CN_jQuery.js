@@ -15,3 +15,9 @@ $(document).ready(function(){
         $("#toggleP").toggle();
     });
 });
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});

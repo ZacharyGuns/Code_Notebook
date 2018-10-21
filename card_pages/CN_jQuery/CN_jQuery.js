@@ -27,11 +27,18 @@ $(document).ready(function(){
 // =================================================================================
 
 $(document).ready(function(){
-    $("#animateBtn").click(function(){
+    $("#animateBlue").click(function(){
         var div = $("#blueSquare");
         div.animate({height: '300px', opacity: '0.4'}, "slow");
         div.animate({width: '300px', opacity: '0.8'}, "slow");
         div.animate({height: '100px', opacity: '0.4'}, "slow");
         div.animate({width: '100px', opacity: '0.8'}, "slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#animateRight").click(function(){
+        var div = $("#purpleSquare");
+        div.animate({left: '250px'});
     });
 });

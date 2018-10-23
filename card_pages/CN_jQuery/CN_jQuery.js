@@ -46,7 +46,7 @@ $(document).ready(function(){
 // =================================================================================
 
 $(document).ready(function(){
-    $("#chainingBtn").click(function(){
+    $("#chainBtn").click(function(){
         $("#chain").css("color", "red").slideUp(2000).slideDown(2000);
     });
 });

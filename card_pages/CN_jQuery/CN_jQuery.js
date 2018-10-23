@@ -42,3 +42,11 @@ $(document).ready(function(){
         div.animate({left: '250px'});
     });
 });
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("#chainingBtn").click(function(){
+        $("#chain").css("color", "red").slideUp(2000).slideDown(2000);
+    });
+});

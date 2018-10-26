@@ -44,16 +44,23 @@
     <div class="container">
         <h3>Animate</h3>
 
-        <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+        <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to
+            first set the CSS position property of the element to relative, fixed, or absolute!</p>
 
         <button id="animateBlue">Start Animation</button>
 
         <div id="blueSquare" style="background:blue;height:100px;width:100px;position: relative;;"></div>
 
         <button id="animateRight">Right</button>
-        <span><button id="animateLeft">Left</button></span>
-        <span></span><button id="animateLong">Long</button></span>
-        <span></span><button id="animateShort">Short</button></span>
+        <span>
+            <button id="animateLeft">Left</button>
+        </span>
+        <span></span>
+        <button id="animateLong">Long</button>
+        </span>
+        <span></span>
+        <button id="animateShort">Short</button>
+        </span>
 
         <div id="purpleSquare" style="background:purple;height:100px;width:100px;position: relative;;"></div>
     </div>
@@ -61,15 +68,24 @@
     <div class="container">
         <h3>Chaining</h3>
 
-        <p>With jQuery, you can chain together multiple actions/methods. Chaining allows us to 
-            run multiple methods (on the same element) within a single statement. In the following 
-            example, clicking the button will cause the phrase to change color, slide down and 
-            slide back up again all with one click.
+        <p>With jQuery, you can chain together multiple actions/methods. Chaining allows us to run multiple methods (on the
+            same element) within a single statement. In the following example, clicking the button will cause the phrase
+            to change color, slide down and slide back up again all with one click.
         </p>
 
         <button id="chainBtn">Click me</button>
 
         <p id="chain">jQuery is fun!</p>
+    </div>
+
+    <div class="container">
+        <h3>Get Content</h3>
+
+        <p id="getTest">This is some
+            <b>bold</b> text in a paragraph.</p>
+
+        <button id="getBtn1">Show Text</button>
+        <button id="getBtn2">Show HTML</button>
     </div>
 
     <script src="CN_jQuery.js"></script>

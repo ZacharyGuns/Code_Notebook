@@ -50,3 +50,14 @@ $(document).ready(function(){
         $("#chain").css("color", "red").slideUp(2000).slideDown(2000);
     });
 });
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("#getBtn1").click(function(){
+        alert("Text: " + $("#getTest").text());
+    });
+    $("#getBtn2").click(function(){
+        alert("HTML: " + $("#getTest").html());
+    });
+});

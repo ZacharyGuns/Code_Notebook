@@ -10,6 +10,10 @@ h3 {
     font-family: Futura;
 }
 
+li {
+    font-family: Futura;
+}
+
 .container{
     border: solid red 2px;
     margin-bottom: 5px;

@@ -61,3 +61,17 @@ $(document).ready(function(){
         alert("HTML: " + $("#getTest").html());
     });
 });
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("#setBtn1").click(function(){
+        $("#setTest1").text("Hello world!");
+    });
+    $("#setBtn2").click(function(){
+        $("#setTest2").html("<b>Hello world!</b>");
+    });
+    $("#setBtn3").click(function(){
+        $("#setTest3").val("Hello world!");
+    });
+});

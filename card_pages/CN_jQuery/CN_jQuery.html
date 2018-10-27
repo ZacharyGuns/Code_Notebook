@@ -87,14 +87,37 @@
             <li>html() - Sets or returns the content of selected elements (including HTML markup)</li>
             <li>val() - Sets or returns the value of form fields</li>
         </ul>
-        <p>The content returned will be formatted exactly as it is written, varying only by which 
-            method is calling. The following example demonstrates how to get both text() and html().</p>
+        <p>The content returned will be formatted exactly as it is written, varying only by which method is calling. The following
+            example demonstrates how to get both text() and html().</p>
 
         <p id="getTest">This is some
             <b>bold</b> text in a paragraph.</p>
 
         <button id="getBtn1">Show Text</button>
         <button id="getBtn2">Show HTML</button>
+    </div>
+
+    <div class="container">
+        <h3>Set Content</h3>
+
+        <p>The same three methods used for to Get Content are used to Set Content:</p>
+        <ul>
+            <li>text() - Sets or returns the text content of selected elements</li>
+            <li>html() - Sets or returns the content of selected elements (including HTML markup)</li>
+            <li>val() - Sets or returns the value of form fields</li>
+        </ul>
+
+        <p id="setTest1">This is a paragraph.</p>
+        <p id="setTest2">This is another paragraph.</p>
+
+        <p>Input field:
+            <input type="text" id="setTest3" value="Insert text here">
+        </p>
+
+        <button id="setBtn1">Set Text</button>
+        <button id="setBtn2">Set HTML</button>
+        <button id="setBtn3">Set Value</button>
+
     </div>
 
     <script src="CN_jQuery.js"></script>

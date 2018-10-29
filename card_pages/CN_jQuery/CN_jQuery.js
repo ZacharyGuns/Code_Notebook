@@ -102,4 +102,12 @@ $(document).ready(function(){
     $("#addBtn6").click(function(){
         $("#addList").after("<li>After item</li>");
     });
+
+    $("#addBtn7").click(function(){
+        $(".addP").before(" <b>Before text</b>.");
+    });
+
+    $("#addBtn8").click(function(){
+        $("#addList").before("<li>Before item</li>");
+    });
 });

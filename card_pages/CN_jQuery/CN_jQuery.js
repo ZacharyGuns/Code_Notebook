@@ -75,3 +75,15 @@ $(document).ready(function(){
         $("#setTest3").val("Hello world!");
     });
 });
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("#addBtn1").click(function(){
+        $(".addP").append(" <b>Appended text</b>.");
+    });
+
+    $("#addBtn2").click(function(){
+        $("#addList").append("<li>Appended item</li>");
+    });
+});

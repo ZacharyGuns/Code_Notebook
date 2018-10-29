@@ -94,4 +94,12 @@ $(document).ready(function(){
     $("#addBtn4").click(function(){
         $("#addList").prepend("<li>Prepended item</li>");
     });
+
+    $("#addBtn5").click(function(){
+        $(".addP").after(" <b>After text</b>.");
+    });
+
+    $("#addBtn6").click(function(){
+        $("#addList").after("<li>After item</li>");
+    });
 });

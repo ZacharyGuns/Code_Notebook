@@ -86,4 +86,12 @@ $(document).ready(function(){
     $("#addBtn2").click(function(){
         $("#addList").append("<li>Appended item</li>");
     });
+
+    $("#addBtn3").click(function(){
+        $(".addP").prepend(" <b>Prepended text</b>.");
+    });
+
+    $("#addBtn4").click(function(){
+        $("#addList").prepend("<li>Prepended item</li>");
+    });
 });

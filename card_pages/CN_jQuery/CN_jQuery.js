@@ -111,3 +111,14 @@ $(document).ready(function(){
         $("#addList").before("<li>Before item</li>");
     });
 });
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("#removeBtn").click(function(){
+        $("#removeContent").remove();
+    });
+    $("#emptyBtn").click(function(){
+        $("#emptyContent").empty();
+    });
+});

@@ -122,3 +122,12 @@ $(document).ready(function(){
         $("#emptyContent").empty();
     });
 });
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".addClassEx").addClass("blue");
+        $("#addClassEx2").addClass("important");
+    });
+});

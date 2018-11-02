@@ -131,3 +131,9 @@ $(document).ready(function(){
         $("#addClassEx2").addClass("important");
     });
 });
+
+$(document).ready(function(){
+    $("#addClassBtn2").click(function(){
+        $("#addClassEx3").addClass("important blue");
+    });
+});

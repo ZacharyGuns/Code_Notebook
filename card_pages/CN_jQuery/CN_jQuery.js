@@ -137,3 +137,11 @@ $(document).ready(function(){
         $("#addClassEx3").addClass("important blue");
     });
 });
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".blue").removeClass("blue");
+    });
+});

@@ -127,14 +127,14 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("button").click(function(){
-        $(".addClassEx").addClass("blue");
+        $(".addClassEx").addClass("addBlue");
         $("#addClassEx2").addClass("important");
     });
 });
 
 $(document).ready(function(){
     $("#addClassBtn2").click(function(){
-        $("#addClassEx3").addClass("important blue");
+        $("#addClassEx3").addClass("important addBlue");
     });
 });
 
@@ -142,6 +142,14 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("button").click(function(){
-        $(".blue").removeClass("blue");
+        $(".blue").removeClass("removeBlue");
+    });
+});
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("h1, h2, p").toggleClass("blue");
     });
 });

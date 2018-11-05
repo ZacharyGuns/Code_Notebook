@@ -36,6 +36,14 @@ li {
     font-size: xx-large;
 }
 
-.blue {
+.addBlue {
+    color: blue;
+}
+
+.removeBlue {
+    color: blue;
+}
+
+.toggleBlue {
     color: blue;
 }

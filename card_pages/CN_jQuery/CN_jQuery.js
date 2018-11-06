@@ -142,7 +142,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("button").click(function(){
-        $(".blue").removeClass("removeBlue");
+        $(".removeBlue").removeClass("removeBlue");
     });
 });
 
@@ -150,6 +150,6 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("button").click(function(){
-        $("h1, h2, p").toggleClass("blue");
+        $(".toggleBlue").toggleClass("toggleBlue");
     });
 });

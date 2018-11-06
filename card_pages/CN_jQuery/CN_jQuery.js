@@ -126,7 +126,7 @@ $(document).ready(function(){
 // =================================================================================
 
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#addClassBtn1").click(function(){
         $(".addClassEx").addClass("addBlue");
         $("#addClassEx2").addClass("important");
     });

@@ -36,13 +36,6 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
-    $("#animateRight").click(function(){
-        var div = $("#purpleSquare");
-        div.animate({left: '250px'});
-    });
-});
-
 // =================================================================================
 
 $(document).ready(function(){

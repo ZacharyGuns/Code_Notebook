@@ -146,3 +146,20 @@ $(document).ready(function(){
         $(".toggleEx").toggleClass("toggleBlue");
     });
 });
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("#returnRedBtn").click(function(){
+        alert("Background color = " + $("#returnRed").css("background-color"));
+    });
+    $("#returnGreenBtn").click(function(){
+        alert("Background color = " + $("#returnGreen").css("background-color"));
+    });
+    $("#returnBlueBtn").click(function(){
+        alert("Background color = " + $("#returnBlue").css("background-color"));
+    });
+    $("#returnPurpleBtn").click(function(){
+        alert("Background color = " + $("#returnPurple").css("background-color"));
+    });
+});

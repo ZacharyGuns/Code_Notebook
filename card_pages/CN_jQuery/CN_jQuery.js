@@ -168,6 +168,6 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#setCSSBtn").click(function(){
-        $("#setCSSex").css("background-color", "yellow");
+        $(".setCSSex").css("background-color", "yellow");
     });
 });

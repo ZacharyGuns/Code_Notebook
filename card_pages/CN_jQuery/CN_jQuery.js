@@ -163,3 +163,11 @@ $(document).ready(function(){
         alert("Background color = " + $("#returnPurple").css("background-color"));
     });
 });
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("#setCSSBtn").click(function(){
+        $("#setCSSex").css("background-color", "yellow");
+    });
+});

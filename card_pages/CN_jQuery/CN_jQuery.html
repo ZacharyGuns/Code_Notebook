@@ -13,301 +13,305 @@
 </head>
 
 <body>
-    <div class="navBar">
-        <a href="../../index.html">Home</a>
-        <a href="../CN_HTML/CN_HTML.html">HTML</a>
-        <a href="../CN_CSS/CN_CSS.html">CSS</a>
-        <a href="../CN_Javascript/CN_Javascript.html">Javascript</a>
-        <a class="active" href="../CN_jQuery/CN_jQuery.html">jQuery</a>
-        <a href="">Bootstrap</a>
-        <a href="">Materialize</a>
-        <a href="">Node.js</a>
-        <a href="">Express.js</a>
-        <a href="">MySQL</a>
-        <a href="">MongoDB</a>
-        <a href="">APIs</a>
-        <a href="">JSON</a>
-        <a href="">AJAX</a>
-        <a href="">React.js</a>
-    </div>
+    <div id="blueFrame">
+        <div id="whiteArea">
+            <div class="navBar">
+                <a href="../../index.html">Home</a>
+                <a href="../CN_HTML/CN_HTML.html">HTML</a>
+                <a href="../CN_CSS/CN_CSS.html">CSS</a>
+                <a href="../CN_Javascript/CN_Javascript.html">Javascript</a>
+                <a class="active" href="../CN_jQuery/CN_jQuery.html">jQuery</a>
+                <a href="">Bootstrap</a>
+                <a href="">Materialize</a>
+                <a href="">Node.js</a>
+                <a href="">Express.js</a>
+                <a href="">MySQL</a>
+                <a href="">MongoDB</a>
+                <a href="">APIs</a>
+                <a href="">JSON</a>
+                <a href="">AJAX</a>
+                <a href="">React.js</a>
+            </div>
 
-    <div class="container">
-        <h3>Hide/Show</h3>
+            <div class="container">
+                <h3>Hide/Show</h3>
 
-        <p>The following example will hide the statement.</p>
+                <p>The following example will hide the statement.</p>
 
-        <button id="hideBtn">Hide</button>
-        <span>
-            <button id="showBtn">Show</button>
-        </span>
+                <button id="hideBtn">Hide</button>
+                <span>
+                    <button id="showBtn">Show</button>
+                </span>
 
-        <p id="hideshowP">Hide will make this text will disappear! Show will make this text reappear!</p>
+                <p id="hideshowP">Hide will make this text will disappear! Show will make this text reappear!</p>
 
-        <br>
+                <br>
 
-        <button id="toggleBtn">Toggle</button>
+                <button id="toggleBtn">Toggle</button>
 
-        <p id="toggleP">This text can be toggled back and forth from show to hide!</p>
-    </div>
+                <p id="toggleP">This text can be toggled back and forth from show to hide!</p>
+            </div>
 
-    <!-- ============================================================================================================ -->
+            <!-- ============================================================================================================ -->
 
-    <div class="container">
-        <h3>Slide</h3>
+            <div class="container">
+                <h3>Slide</h3>
 
-        <p>jQuery can create a sliding effect on elements.</p>
+                <p>jQuery can create a sliding effect on elements.</p>
 
-        <div id="flip">Click to slide the panel down or up</div>
-        <div id="panel">Hello world!</div>
-    </div>
+                <div id="flip">Click to slide the panel down or up</div>
+                <div id="panel">Hello world!</div>
+            </div>
 
-    <!-- ============================================================================================================ -->
+            <!-- ============================================================================================================ -->
 
-    <div class="container">
-        <h3>Animate</h3>
+            <div class="container">
+                <h3>Animate</h3>
 
-        <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to
-            first set the CSS position property of the element to relative, fixed, or absolute!</p>
+                <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember
+                    to first set the CSS position property of the element to relative, fixed, or absolute!</p>
 
-        <button id="animateBlue">Start Animation</button>
+                <button id="animateBlue">Start Animation</button>
 
-        <div id="blueSquare" style="background:blue;height:100px;width:100px;position: relative;;"></div>
-    </div>
+                <div id="blueSquare" style="background:blue;height:100px;width:100px;position: relative;;"></div>
+            </div>
 
-    <div class="container">
-        <h3>Chaining</h3>
+            <div class="container">
+                <h3>Chaining</h3>
 
-        <p>With jQuery, you can chain together multiple actions/methods. Chaining allows us to run multiple methods (on the
-            same element) within a single statement. In the following example, clicking the button will cause the phrase
-            to change color, slide down and slide back up again all with one click.
-        </p>
+                <p>With jQuery, you can chain together multiple actions/methods. Chaining allows us to run multiple methods
+                    (on the same element) within a single statement. In the following example, clicking the button will cause
+                    the phrase to change color, slide down and slide back up again all with one click.
+                </p>
 
-        <button id="chainBtn">Click me</button>
+                <button id="chainBtn">Click me</button>
 
-        <p id="chain">jQuery is fun!</p>
-    </div>
+                <p id="chain">jQuery is fun!</p>
+            </div>
 
-    <!-- ============================================================================================================ -->
+            <!-- ============================================================================================================ -->
 
-    <div class="container">
-        <h3>Get Content</h3>
+            <div class="container">
+                <h3>Get Content</h3>
 
-        <p>Three simple, but useful, jQuery methods for DOM manipulation are:</p>
-        <ul>
-            <li>text() - Sets or returns the text content of selected elements</li>
-            <li>html() - Sets or returns the content of selected elements (including HTML markup)</li>
-            <li>val() - Sets or returns the value of form fields</li>
-        </ul>
-        <p>The content returned will be formatted exactly as it is written, varying only by which method is calling. The following
-            example demonstrates how to get both text() and html().</p>
+                <p>Three simple, but useful, jQuery methods for DOM manipulation are:</p>
+                <ul>
+                    <li>text() - Sets or returns the text content of selected elements</li>
+                    <li>html() - Sets or returns the content of selected elements (including HTML markup)</li>
+                    <li>val() - Sets or returns the value of form fields</li>
+                </ul>
+                <p>The content returned will be formatted exactly as it is written, varying only by which method is calling.
+                    The following example demonstrates how to get both text() and html().</p>
 
-        <p id="getTest">This is some
-            <b>bold</b> text in a paragraph.</p>
+                <p id="getTest">This is some
+                    <b>bold</b> text in a paragraph.</p>
 
-        <button id="getBtn1">Show Text</button>
-        <button id="getBtn2">Show HTML</button>
-    </div>
+                <button id="getBtn1">Show Text</button>
+                <button id="getBtn2">Show HTML</button>
+            </div>
 
-    <!-- ============================================================================================================ -->
+            <!-- ============================================================================================================ -->
 
-    <div class="container">
-        <h3>Set Content</h3>
+            <div class="container">
+                <h3>Set Content</h3>
 
-        <p>The same three methods used for to Get Content are used to Set Content:</p>
-        <ul>
-            <li>text() - Sets or returns the text content of selected elements</li>
-            <li>html() - Sets or returns the content of selected elements (including HTML markup)</li>
-            <li>val() - Sets or returns the value of form fields</li>
-        </ul>
-        <p>In the following example, the first statement is replaced by text ( text() ) from the jQuery. The second statement
-            is replaced by text including the html markup around it ( html() ), in this case including the bold tags around
-            it. In the last statement, only the value of the form is changed ( val() ).
-        </p>
+                <p>The same three methods used for to Get Content are used to Set Content:</p>
+                <ul>
+                    <li>text() - Sets or returns the text content of selected elements</li>
+                    <li>html() - Sets or returns the content of selected elements (including HTML markup)</li>
+                    <li>val() - Sets or returns the value of form fields</li>
+                </ul>
+                <p>In the following example, the first statement is replaced by text ( text() ) from the jQuery. The second
+                    statement is replaced by text including the html markup around it ( html() ), in this case including
+                    the bold tags around it. In the last statement, only the value of the form is changed ( val() ).
+                </p>
 
-        <p id="setTest1">This is a paragraph.</p>
-        <p id="setTest2">This is another paragraph.</p>
+                <p id="setTest1">This is a paragraph.</p>
+                <p id="setTest2">This is another paragraph.</p>
 
-        <p>Input field:
-            <input type="text" id="setTest3" value="Insert text here">
-        </p>
+                <p>Input field:
+                    <input type="text" id="setTest3" value="Insert text here">
+                </p>
 
-        <button id="setBtn1">Set Text</button>
-        <button id="setBtn2">Set HTML</button>
-        <button id="setBtn3">Set Value</button>
-    </div>
+                <button id="setBtn1">Set Text</button>
+                <button id="setBtn2">Set HTML</button>
+                <button id="setBtn3">Set Value</button>
+            </div>
 
-    <!-- ============================================================================================================ -->
+            <!-- ============================================================================================================ -->
 
-    <div class="container">
-        <h3>Add Content</h3>
+            <div class="container">
+                <h3>Add Content</h3>
 
-        <p>There are four jQuery methods used to add content:</p>
-        <ol>
-            <li>append() - Inserts content at the end of the selected elements</li>
-            <li>prepend() - Inserts content at the beginning of the selected elements</li>
-            <li>after() - Inserts content after the selected elements</li>
-            <li>before() - Inserts content before the selected elements</li>
-        </ol>
+                <p>There are four jQuery methods used to add content:</p>
+                <ol>
+                    <li>append() - Inserts content at the end of the selected elements</li>
+                    <li>prepend() - Inserts content at the beginning of the selected elements</li>
+                    <li>after() - Inserts content after the selected elements</li>
+                    <li>before() - Inserts content before the selected elements</li>
+                </ol>
 
-        <p>In the following example, each button demonstrates where new information appears depending on which method is used
-            to add it.
-        </p>
+                <p>In the following example, each button demonstrates where new information appears depending on which method
+                    is used to add it.
+                </p>
 
-        <p class="addP">This is a paragraph.</p>
-        <p class="addP">This is another paragraph.</p>
+                <p class="addP">This is a paragraph.</p>
+                <p class="addP">This is another paragraph.</p>
 
-        <ol id="addList">
-            <li>List item 1</li>
-            <li>List item 2</li>
-            <li>List item 3</li>
-        </ol>
+                <ol id="addList">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ol>
 
-        <button id="addBtn1">Append text</button>
-        <button id="addBtn2">Append list items</button>
-        <button id="addBtn3">Prepend text</button>
-        <button id="addBtn4">Prepend list items</button>
-        <button id="addBtn5">After text</button>
-        <button id="addBtn6">After list items</button>
-        <button id="addBtn7">Before text</button>
-        <button id="addBtn8">Before list items</button>
-    </div>
+                <button id="addBtn1">Append text</button>
+                <button id="addBtn2">Append list items</button>
+                <button id="addBtn3">Prepend text</button>
+                <button id="addBtn4">Prepend list items</button>
+                <button id="addBtn5">After text</button>
+                <button id="addBtn6">After list items</button>
+                <button id="addBtn7">Before text</button>
+                <button id="addBtn8">Before list items</button>
+            </div>
 
-    <!-- ============================================================================================================ -->
+            <!-- ============================================================================================================ -->
 
-    <div class="container">
-        <h3>Remove Content</h3>
+            <div class="container">
+                <h3>Remove Content</h3>
 
-        <p>To remove elements and content, there are mainly two jQuery methods:</p>
-        <ul>
-            <li>remove() - Removes the selected element (and its child elements)</li>
-            <li>empty() - Removes the child elements from the selected element</li>
-        </ul>
+                <p>To remove elements and content, there are mainly two jQuery methods:</p>
+                <ul>
+                    <li>remove() - Removes the selected element (and its child elements)</li>
+                    <li>empty() - Removes the child elements from the selected element</li>
+                </ul>
 
-        <p>The jQuery remove() method removes the selected element(s) and its child elements. In the following example, clicking
-            the button removes the div containing the text. By removing the div we are also removing all the elements contained
-            within.
-        </p>
+                <p>The jQuery remove() method removes the selected element(s) and its child elements. In the following example,
+                    clicking the button removes the div containing the text. By removing the div we are also removing all
+                    the elements contained within.
+                </p>
 
-        <div id="removeContent" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
-            This is some text in the div.
-            <p>This is a paragraph in the div.</p>
-            <p>This is another paragraph in the div.</p>
+                <div id="removeContent" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+                    This is some text in the div.
+                    <p>This is a paragraph in the div.</p>
+                    <p>This is another paragraph in the div.</p>
+                </div>
+
+                <button id="removeBtn">Remove div element</button>
+
+                <p>The jQuery empty() method removes the child elements of the selected element(s). In the following example,
+                    clicking the button emptys the div containing the text. By emptying the div we are only clearing all
+                    the elements contained within, not the div itself.
+                </p>
+
+                <div id="emptyContent" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+                    This is some text in the div.
+                    <p>This is a paragraph in the div.</p>
+                    <p>This is another paragraph in the div.</p>
+                </div>
+
+                <button id="emptyBtn">Empty div element</button>
+            </div>
+
+            <!-- ============================================================================================================ -->
+
+            <div class="container">
+                <h3>addClass()</h3>
+
+                <p>The following example shows how to add class attributes to different elements. Of course you can select multiple
+                    elements, when adding classes:</p>
+
+                <h1 class="addClassEx">Heading 1</h1>
+                <h2 class="addClassEx">Heading 2</h2>
+
+                <p class="addClassEx">This is a paragraph.</p>
+                <p class="addClassEx">This is another paragraph.</p>
+
+                <div id="addClassEx2">This is some important text!</div>
+                <br>
+
+                <button id="addClassBtn1">Add classes to elements</button>
+
+                <p>You can also specify multiple classes within the addClass() method:</p>
+
+                <div id="addClassEx3">This is some text.</div>
+                <div id="addClassEx4">This is some text.</div>
+                <br>
+
+                <button id="addClassBtn2">Add classes to first div element</button>
+            </div>
+
+            <!-- ============================================================================================================ -->
+
+            <div class="container">
+                <h3>removeClass()</h3>
+
+                <p>The following example shows how to remove a specific class attribute from different elements:</p>
+
+                <h1 class="removeBlue">Heading 1</h1>
+                <h2 class="removeBlue">Heading 2</h2>
+
+                <p class="removeBlue">This is a paragraph.</p>
+                <p>This is another paragraph.</p>
+
+                <button id="removeClassBtn">Remove class from elements</button>
+            </div>
+
+            <!-- ============================================================================================================ -->
+
+            <div class="container">
+                <h3>toggleClass()</h3>
+
+                <h1 class="toggleBlue toggleEx">Heading 1</h1>
+                <h2 class="toggleBlue toggleEx">Heading 2</h2>
+
+                <p class="toggleBlue toggleEx">This is a paragraph.</p>
+                <p class="toggleBlue toggleEx">This is another paragraph.</p>
+
+                <button id="toggleClassBtn">Toggle class</button>
+            </div>
+
+            <!-- ============================================================================================================ -->
+
+            <div class="container">
+                <h3>css() Method: Return a CSS Property</h3>
+
+                <p>To return the value of a specified CSS property, use the following syntax:</p>
+                <pre>css("propertyname");</pre>
+                <p>The css() method sets or returns one or more style properties for the selected elements.</p>
+                <p>The following example will return the background-color value of the FIRST matched element:</p>
+
+                <p id="returnRed" style="background-color:#ff0000">This is a paragraph.</p>
+                <p id="returnGreen" style="background-color:#00ff00">This is a paragraph.</p>
+                <p id="returnBlue" style="background-color:#0000ff">This is a paragraph.</p>
+                <p id="returnPurple" style="background-color:#a210db">This is a paragraph.</p>
+
+                <button id="returnRedBtn">Return background-color red</button>
+                <button id="returnGreenBtn">Return background-color green</button>
+                <button id="returnBlueBtn">Return background-color blue</button>
+                <button id="returnPurpleBtn">Return background-color purple</button>
+            </div>
+
+            <!-- ============================================================================================================ -->
+
+            <div class="container">
+                <h3>css() Method: Set a CSS Property</h3>
+
+                <p>To set a specified CSS property, use the following syntax:</p>
+                <pre>css("propertyname","value");</pre>
+                <p>The following example will set the background-color value for ALL matched elements:</p>
+
+                <p class="setCSSex" style="background-color:#ff0000">This is a paragraph.</p>
+                <p class="setCSSex" style="background-color:#00ff00">This is a paragraph.</p>
+                <p class="setCSSex" style="background-color:#0000ff">This is a paragraph.</p>
+
+                <p class="setCSSex">This is a paragraph.</p>
+
+                <button id="setCSSBtn">Set background-color of p</button>
+            </div>
+
+            <script src="CN_jQuery.js"></script>
         </div>
-
-        <button id="removeBtn">Remove div element</button>
-
-        <p>The jQuery empty() method removes the child elements of the selected element(s). In the following example, clicking
-            the button emptys the div containing the text. By emptying the div we are only clearing all the elements contained
-            within, not the div itself.
-        </p>
-
-        <div id="emptyContent" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
-            This is some text in the div.
-            <p>This is a paragraph in the div.</p>
-            <p>This is another paragraph in the div.</p>
-        </div>
-
-        <button id="emptyBtn">Empty div element</button>
     </div>
-
-    <!-- ============================================================================================================ -->
-
-    <div class="container">
-        <h3>addClass()</h3>
-
-        <p>The following example shows how to add class attributes to different elements. Of course you can select multiple
-            elements, when adding classes:</p>
-
-        <h1 class="addClassEx">Heading 1</h1>
-        <h2 class="addClassEx">Heading 2</h2>
-
-        <p class="addClassEx">This is a paragraph.</p>
-        <p class="addClassEx">This is another paragraph.</p>
-
-        <div id="addClassEx2">This is some important text!</div>
-        <br>
-
-        <button id="addClassBtn1">Add classes to elements</button>
-
-        <p>You can also specify multiple classes within the addClass() method:</p>
-
-        <div id="addClassEx3">This is some text.</div>
-        <div id="addClassEx4">This is some text.</div>
-        <br>
-
-        <button id="addClassBtn2">Add classes to first div element</button>
-    </div>
-
-    <!-- ============================================================================================================ -->
-
-    <div class="container">
-        <h3>removeClass()</h3>
-
-        <p>The following example shows how to remove a specific class attribute from different elements:</p>
-
-        <h1 class="removeBlue">Heading 1</h1>
-        <h2 class="removeBlue">Heading 2</h2>
-
-        <p class="removeBlue">This is a paragraph.</p>
-        <p>This is another paragraph.</p>
-
-        <button id="removeClassBtn">Remove class from elements</button>
-    </div>
-
-    <!-- ============================================================================================================ -->
-
-    <div class="container">
-        <h3>toggleClass()</h3>
-
-        <h1 class="toggleBlue toggleEx">Heading 1</h1>
-        <h2 class="toggleBlue toggleEx">Heading 2</h2>
-
-        <p class="toggleBlue toggleEx">This is a paragraph.</p>
-        <p class="toggleBlue toggleEx">This is another paragraph.</p>
-
-        <button id="toggleClassBtn">Toggle class</button>
-    </div>
-
-    <!-- ============================================================================================================ -->
-
-    <div class="container">
-        <h3>css() Method: Return a CSS Property</h3>
-
-        <p>To return the value of a specified CSS property, use the following syntax:</p>
-        <pre>css("propertyname");</pre>
-        <p>The css() method sets or returns one or more style properties for the selected elements.</p>
-        <p>The following example will return the background-color value of the FIRST matched element:</p>
-
-        <p id="returnRed" style="background-color:#ff0000">This is a paragraph.</p>
-        <p id="returnGreen" style="background-color:#00ff00">This is a paragraph.</p>
-        <p id="returnBlue" style="background-color:#0000ff">This is a paragraph.</p>
-        <p id="returnPurple" style="background-color:#a210db">This is a paragraph.</p>
-
-        <button id="returnRedBtn">Return background-color red</button>
-        <button id="returnGreenBtn">Return background-color green</button>
-        <button id="returnBlueBtn">Return background-color blue</button>
-        <button id="returnPurpleBtn">Return background-color purple</button>
-    </div>
-
-    <!-- ============================================================================================================ -->
-
-    <div class="container">
-        <h3>css() Method: Set a CSS Property</h3>
-
-        <p>To set a specified CSS property, use the following syntax:</p>
-        <pre>css("propertyname","value");</pre>
-        <p>The following example will set the background-color value for ALL matched elements:</p>
-
-        <p class="setCSSex" style="background-color:#ff0000">This is a paragraph.</p>
-        <p class="setCSSex" style="background-color:#00ff00">This is a paragraph.</p>
-        <p class="setCSSex" style="background-color:#0000ff">This is a paragraph.</p>
-
-        <p class="setCSSex">This is a paragraph.</p>
-
-        <button id="setCSSBtn">Set background-color of p</button>
-    </div>
-
-    <script src="CN_jQuery.js"></script>
 </body>
 
 </html>

@@ -10,334 +10,339 @@
 </head>
 
 <body>
-    <div class="navBar">
-        <a href="../../index.html">Home</a>
-        <a href="../CN_HTML/CN_HTML.html">HTML</a>
-        <a href="../CN_CSS/CN_CSS.html">CSS</a>
-        <a class="active" href="../CN_Javascript/CN_Javascript.html">Javascript</a>
-        <a href="../CN_jQuery/CN_jQuery.html">jQuery</a>
-        <a href="">Bootstrap</a>
-        <a href="">Materialize</a>
-        <a href="">Node.js</a>
-        <a href="">Express.js</a>
-        <a href="">MySQL</a>
-        <a href="">MongoDB</a>
-        <a href="">APIs</a>
-        <a href="">JSON</a>
-        <a href="">AJAX</a>
-        <a href="">React.js</a>
+    <div id="blueFrame">
+        <div id="whiteArea">
+            <div class="navBar">
+                <a href="../../index.html">Home</a>
+                <a href="../CN_HTML/CN_HTML.html">HTML</a>
+                <a href="../CN_CSS/CN_CSS.html">CSS</a>
+                <a class="active" href="../CN_Javascript/CN_Javascript.html">Javascript</a>
+                <a href="../CN_jQuery/CN_jQuery.html">jQuery</a>
+                <a href="">Bootstrap</a>
+                <a href="">Materialize</a>
+                <a href="">Node.js</a>
+                <a href="">Express.js</a>
+                <a href="">MySQL</a>
+                <a href="">MongoDB</a>
+                <a href="">APIs</a>
+                <a href="">JSON</a>
+                <a href="">AJAX</a>
+                <a href="">React.js</a>
+            </div>
+
+            <h1>hello world</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id vestibulum felis. Aliquam vulputate molestie
+                est, vel tincidunt nulla gravida vel. Nam mollis tempus massa sit amet hendrerit. Vivamus porta non purus
+                sed maximus. Quisque porttitor fringilla suscipit. Nunc feugiat at velit eget scelerisque. Vestibulum feugiat
+                libero nec est accumsan, id pellentesque ipsum efficitur. Nullam tincidunt dolor ut eros auctor placerat.
+                Maecenas sit amet magna arcu. Quisque ornare tortor sed ante vestibulum dignissim. Suspendisse interdum eros
+                nec commodo vulputate. Praesent ante justo, laoreet sit amet nibh iaculis, convallis fringilla justo. Phasellus
+                ultricies sapien et magna scelerisque laoreet. Aliquam dapibus accumsan dolor in tristique.</p>
+            <p>Suspendisse venenatis lectus id massa scelerisque dapibus. Vivamus auctor pulvinar massa, in egestas risus dapibus
+                vel. Nullam egestas turpis odio, vel convallis nisl tincidunt non. Proin placerat venenatis posuere. Ut tortor
+                justo, molestie eu neque ac, lacinia dictum tellus. Donec vitae libero nec sapien imperdiet lacinia quis
+                quis nunc. Sed posuere, mi sed elementum viverra, dui felis venenatis lectus, a sollicitudin dolor urna sit
+                amet sem. Donec et condimentum lectus, sed auctor mauris. Vestibulum eu feugiat nisl.</p>
+            <img src="../../assets/images/zebra.jpg" id="zebra">
+
+            <div class="container">
+                <h3>Drop Downs</h3>
+
+                <p>Select an animal from the list.</p>
+
+                <select id="mySelect" onchange="myFunction1()">
+                    <option value="zebra">zebra
+                        <option value="tiger">tiger
+                            <option value="shark">shark
+                                <option value="wolf">wolf
+                </select>
+
+                <p>When you select an animal, a function is triggered which outputs the value of the selected animal.</p>
+
+                <p id="demo1"></p>
+            </div>
+
+            <div class="container">
+                <h3>Prompts</h3>
+
+                <p>Click the button for a prompt</p>
+                <button onclick="myFunction2()">Try it</button>
+
+                <p id="demo2"></p>
+            </div>
+
+            <div class="container">
+                <h3>Operators</h3>
+
+                <form>
+                    1st Number :
+                    <input type="text" id="firstNumber" />
+                    <br> 2nd Number:
+                    <input type="text" id="secondNumber" />
+                    <br>
+                    <input type="button" onClick="addBy()" Value="Add" />
+                    <input type="button" onClick="subtractBy()" Value="Subtract" />
+                    <input type="button" onClick="multiplyBy()" Value="Multiply" />
+                    <input type="button" onClick="divideBy()" Value="Divide" />
+                </form>
+                <p>The Result is :
+                    <br>
+                    <span id="result"></span>
+                </p>
+            </div>
+
+            <div class="container">
+                <h3>For Loops</h3>
+
+                <p>The list of cars is not in html, is is held by an array variable in javascript. In the html, a p tag contains
+                    an id that calls the list of cars from the javascript. The for loop is told to read every index of the
+                    array and return it to the id in the html so we can read it here.
+                </p>
+
+                <p id="loop1"></p>
+
+                <p>In this loop we have the exact same list as the example above, only this time we are telling the loop to
+                    read through the array and return every index after 2. Because of this, we will not see Ford or Lexus
+                    appear in the following list.
+                </p>
+
+                <p id="loop2"></p>
+
+                <p>
+                    For Loops can also contain "breaks." In the following example, the loop is told to return every number less than 10. However,
+                    an "if" condition is included, saying that if the loop reaches a number strictly equal to 3 it must break
+                    the loop. This is why only 0, 1 and 2 appear.
+                </p>
+
+                <p id="loopBreak"></p>
+            </div>
+
+            <div class="container">
+                <h3>Conditionals</h3>
+
+                <p>
+                    Conditionals are If/Else statements. A standard If/Else only has two possible outcomes. Ex: If true, return A. Else return
+                    B. If the conditional is true, then we should see A returned to us. However, if the conditional is not
+                    true, else false, it will return B instead. In the following example we are using a time conditional.
+                    If the time is less than 18:00 hours (12am-6pm), return Good day! Else, return Good night! (6pm-12am).
+                </p>
+
+                <p id="ifElse1"></p>
+
+                <p>
+                    This is an If, Else if, Else coniditional. Conditionals that contain Else if's can have any number of possible outcomes depending
+                    on how many Else if's you include. In this case, rather than having only Good day and Good night as possible
+                    outcomes for the time, we instead have Good morning (12am-12pm), Good afternoon (12pm-6pm) and Good evening
+                    (6pm-12am).
+                </p>
+
+                <p id="ifElse2"></p>
+            </div>
+
+            <div class="container">
+                <h3>Switch Statement</h3>
+
+                <p>Switch Statements are evaluated once. The value of the expression is compared with the values of each case.
+                    If there is a match, the associated block of code is executed. In this example, there are 7 cases, one
+                    for each day of the week. Once the expression is called, it checks which day of the week it currently
+                    is and returns the correct one. At the end of each Switch Statement is the "break" keyword. Once the
+                    code runs reaches the "break" keyword, it breaks out of the switch block and stops the Switch Statement.
+                </p>
+
+                <p id="todayIs"></p>
+
+                <p>
+                    The "default" keyword specifies the code to run if there is no case match. In the following example, the expression is only
+                    given two specific cases to search through, Saturday and Sunday. If the current day of the week is neither
+                    Saturday nor Sunday, it instead runs the default for all week days Monday through Friday. The statement
+                    will return "Today is Saturday" or "Today is Sunday" for each appropriate weekend day. For Monday through
+                    Friday, it will return "Looking forward to the weekend."
+                </p>
+
+                <p id="defaultDay"></p>
+
+                <p>
+                    The following example uses common code blocks. the keys for Saturday and Sunday, Monday-Wednesday and Thursday and Friday
+                    all share the same values. If the current day of the week lands on either Saturday or Sunday, it will
+                    read and return the same case value, displaying that "It is the weekend." If it is Monday, Tuesday or
+                    Wednesday, it will read the same case value and display "Looking forward to the weekend." If it is Thursday
+                    or Friday, it will read the same case value and display "Soon it is the weekend." By grouping keys with
+                    same values, it helps create "dry" code.
+                </p>
+
+                <p id="commonDay"></p>
+            </div>
+
+            <div class="container">
+                <h3>Math.random</h3>
+
+                <p>
+                    Math.random is a way to return a random number after a function is called. You can control the range of numbers that can
+                    be selected by setting a minimum and maximum number. In the following example, clicking the button will
+                    return any random number that is greater than or equal to 1, or less than or equal to 10.
+                </p>
+
+                <button onclick="mathRandomBtn()">Randomize</button>
+
+                <p id="mathRandom">0</p>
+            </div>
+
+            <!-- =============================================================================================================== -->
+            <!-- =============================================================================================================== -->
+
+            <script>
+                function myFunction1() {
+                    var x = document.getElementById("mySelect").value;
+                    document.getElementById("demo1").innerHTML = "You selected: " + x;
+                }
+
+                //=============================================================================
+
+                function myFunction2() {
+                    var person = prompt("Please enter your name");
+                    if (person != null) {
+                        document.getElementById("demo2").innerHTML =
+                            "Hello " + person + "! How are you today?";
+                    }
+                }
+
+                //=============================================================================
+
+                function addBy() {
+                    num1 = document.getElementById("firstNumber").value;
+                    num2 = document.getElementById("secondNumber").value;
+                    document.getElementById("result").innerHTML = +num1 + +num2;
+                }
+
+                function subtractBy() {
+                    num1 = document.getElementById("firstNumber").value;
+                    num2 = document.getElementById("secondNumber").value;
+                    document.getElementById("result").innerHTML = num1 - num2;
+                }
+
+                function multiplyBy() {
+                    num1 = document.getElementById("firstNumber").value;
+                    num2 = document.getElementById("secondNumber").value;
+                    document.getElementById("result").innerHTML = num1 * num2;
+                }
+
+                function divideBy() {
+                    num1 = document.getElementById("firstNumber").value;
+                    num2 = document.getElementById("secondNumber").value;
+                    document.getElementById("result").innerHTML = num1 / num2;
+                }
+
+                //=============================================================================
+
+                var cars1 = ["Ford", "Lexus", "Jeep", "Dodge", "Honda"];
+                var text = "";
+                for (i = 0; i < cars1.length; i++) {
+                    text += cars1[i] + "<br>";
+                }
+                document.getElementById("loop1").innerHTML = text;
+
+                var cars2 = ["Ford", "Lexus", "Jeep", "Dodge", "Honda"];
+                var i = 2;
+                var len = cars2.length;
+                var text = "";
+
+                for (; i < len; i++) {
+                    text += cars2[i] + "<br>";
+                }
+
+                document.getElementById("loop2").innerHTML = text;
+
+                var text = "";
+                var i;
+                for (i = 0; i < 10; i++) {
+                    if (i === 3) { break; }
+                    text += "10 > " + i + "<br>";
+                }
+                document.getElementById("loopBreak").innerHTML = text;
+
+                //=============================================================================
+
+
+                if (new Date().getHours() < 18) {
+                    document.getElementById("ifElse1").innerHTML = "Good day!";
+                }
+                else {
+                    document.getElementById("ifElse1").innerHTML = "Good night!";
+                }
+
+                var time = new Date().getHours();
+                if (time < 12) {
+                    greeting = "Good morning!";
+                } else if (time < 18) {
+                    greeting = "Good afternoon!";
+                } else {
+                    greeting = "Good evening!";
+                }
+                document.getElementById("ifElse2").innerHTML = greeting;
+
+                //=============================================================================
+
+                var day;
+                switch (new Date().getDay()) {
+                    case 0:
+                        day = "Sunday";
+                        break;
+                    case 1:
+                        day = "Monday";
+                        break;
+                    case 2:
+                        day = "Tuesday";
+                        break;
+                    case 3:
+                        day = "Wednesday";
+                        break;
+                    case 4:
+                        day = "Thursday";
+                        break;
+                    case 5:
+                        day = "Friday";
+                        break;
+                    case 6:
+                        day = "Saturday";
+                }
+                document.getElementById("todayIs").innerHTML = "Today is " + day;
+
+                var text;
+                switch (new Date().getDay()) {
+                    case 6:
+                        text = "Today is Saturday";
+                        break;
+                    case 0:
+                        text = "Today is Sunday";
+                        break;
+                    default:
+                        text = "Looking forward to the Weekend";
+                }
+                document.getElementById("defaultDay").innerHTML = text;
+
+                var text;
+                switch (new Date().getDay()) {
+                    case 4:
+                    case 5:
+                        text = "Soon it is Weekend";
+                        break;
+                    case 0:
+                    case 6:
+                        text = "It is Weekend";
+                        break;
+                    default:
+                        text = "Looking forward to the Weekend";
+                }
+                document.getElementById("commonDay").innerHTML = text;
+
+                //=============================================================================
+
+                function mathRandomBtn() {
+                    document.getElementById("mathRandom").innerHTML = Math.floor(Math.random() * 10) + 1;
+                }
+            </script>
+        </div>
     </div>
-
-    <h1>hello world</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id vestibulum felis. Aliquam vulputate molestie est,
-        vel tincidunt nulla gravida vel. Nam mollis tempus massa sit amet hendrerit. Vivamus porta non purus sed maximus.
-        Quisque porttitor fringilla suscipit. Nunc feugiat at velit eget scelerisque. Vestibulum feugiat libero nec est accumsan,
-        id pellentesque ipsum efficitur. Nullam tincidunt dolor ut eros auctor placerat. Maecenas sit amet magna arcu. Quisque
-        ornare tortor sed ante vestibulum dignissim. Suspendisse interdum eros nec commodo vulputate. Praesent ante justo,
-        laoreet sit amet nibh iaculis, convallis fringilla justo. Phasellus ultricies sapien et magna scelerisque laoreet.
-        Aliquam dapibus accumsan dolor in tristique.</p>
-    <p>Suspendisse venenatis lectus id massa scelerisque dapibus. Vivamus auctor pulvinar massa, in egestas risus dapibus vel.
-        Nullam egestas turpis odio, vel convallis nisl tincidunt non. Proin placerat venenatis posuere. Ut tortor justo,
-        molestie eu neque ac, lacinia dictum tellus. Donec vitae libero nec sapien imperdiet lacinia quis quis nunc. Sed
-        posuere, mi sed elementum viverra, dui felis venenatis lectus, a sollicitudin dolor urna sit amet sem. Donec et condimentum
-        lectus, sed auctor mauris. Vestibulum eu feugiat nisl.</p>
-    <img src="../../assets/images/zebra.jpg" id="zebra">
-
-    <div class="container">
-        <h3>Drop Downs</h3>
-
-        <p>Select an animal from the list.</p>
-
-        <select id="mySelect" onchange="myFunction1()">
-            <option value="zebra">zebra
-                <option value="tiger">tiger
-                    <option value="shark">shark
-                        <option value="wolf">wolf
-        </select>
-
-        <p>When you select an animal, a function is triggered which outputs the value of the selected animal.</p>
-
-        <p id="demo1"></p>
-    </div>
-
-    <div class="container">
-        <h3>Prompts</h3>
-
-        <p>Click the button for a prompt</p>
-        <button onclick="myFunction2()">Try it</button>
-
-        <p id="demo2"></p>
-    </div>
-
-    <div class="container">
-        <h3>Operators</h3>
-
-        <form>
-            1st Number :
-            <input type="text" id="firstNumber" />
-            <br> 2nd Number:
-            <input type="text" id="secondNumber" />
-            <br>
-            <input type="button" onClick="addBy()" Value="Add" />
-            <input type="button" onClick="subtractBy()" Value="Subtract" />
-            <input type="button" onClick="multiplyBy()" Value="Multiply" />
-            <input type="button" onClick="divideBy()" Value="Divide" />
-        </form>
-        <p>The Result is :
-            <br>
-            <span id="result"></span>
-        </p>
-    </div>
-
-    <div class="container">
-        <h3>For Loops</h3>
-
-        <p>The list of cars is not in html, is is held by an array variable in javascript. In the html, a p tag contains an
-            id that calls the list of cars from the javascript. The for loop is told to read every index of the array and
-            return it to the id in the html so we can read it here.
-        </p>
-
-        <p id="loop1"></p>
-
-        <p>In this loop we have the exact same list as the example above, only this time we are telling the loop to read through
-            the array and return every index after 2. Because of this, we will not see Ford or Lexus appear in the following
-            list.
-        </p>
-
-        <p id="loop2"></p>
-
-        <p>
-            For Loops can also contain "breaks." In the following example, the loop is told to return every number less than 10. However,
-            an "if" condition is included, saying that if the loop reaches a number strictly equal to 3 it must break the
-            loop. This is why only 0, 1 and 2 appear.
-        </p>
-
-        <p id="loopBreak"></p>
-    </div>
-
-    <div class="container">
-        <h3>Conditionals</h3>
-
-        <p>
-            Conditionals are If/Else statements. A standard If/Else only has two possible outcomes. Ex: If true, return A. Else return
-            B. If the conditional is true, then we should see A returned to us. However, if the conditional is not true,
-            else false, it will return B instead. In the following example we are using a time conditional. If the time is
-            less than 18:00 hours (12am-6pm), return Good day! Else, return Good night! (6pm-12am).
-        </p>
-
-        <p id="ifElse1"></p>
-
-        <p>
-            This is an If, Else if, Else coniditional. Conditionals that contain Else if's can have any number of possible outcomes depending
-            on how many Else if's you include. In this case, rather than having only Good day and Good night as possible
-            outcomes for the time, we instead have Good morning (12am-12pm), Good afternoon (12pm-6pm) and Good evening (6pm-12am).
-        </p>
-
-        <p id="ifElse2"></p>
-    </div>
-
-    <div class="container">
-        <h3>Switch Statement</h3>
-
-        <p>Switch Statements are evaluated once. The value of the expression is compared with the values of each case. If there
-            is a match, the associated block of code is executed. In this example, there are 7 cases, one for each day of
-            the week. Once the expression is called, it checks which day of the week it currently is and returns the correct
-            one. At the end of each Switch Statement is the "break" keyword. Once the code runs reaches the "break" keyword,
-            it breaks out of the switch block and stops the Switch Statement.
-        </p>
-
-        <p id="todayIs"></p>
-
-        <p>
-            The "default" keyword specifies the code to run if there is no case match. In the following example, the expression is only
-            given two specific cases to search through, Saturday and Sunday. If the current day of the week is neither Saturday
-            nor Sunday, it instead runs the default for all week days Monday through Friday. The statement will return "Today
-            is Saturday" or "Today is Sunday" for each appropriate weekend day. For Monday through Friday, it will return
-            "Looking forward to the weekend."
-        </p>
-
-        <p id="defaultDay"></p>
-
-        <p>
-            The following example uses common code blocks. the keys for Saturday and Sunday, Monday-Wednesday and Thursday and Friday
-            all share the same values. If the current day of the week lands on either Saturday or Sunday, it will read and
-            return the same case value, displaying that "It is the weekend." If it is Monday, Tuesday or Wednesday, it will
-            read the same case value and display "Looking forward to the weekend." If it is Thursday or Friday, it will read
-            the same case value and display "Soon it is the weekend." By grouping keys with same values, it helps create
-            "dry" code.
-        </p>
-
-        <p id="commonDay"></p>
-    </div>
-
-    <div class="container">
-        <h3>Math.random</h3>
-
-        <p>
-            Math.random is a way to return a random number after a function is called. You can control the range of numbers that can
-            be selected by setting a minimum and maximum number. In the following example, clicking the button will return
-            any random number that is greater than or equal to 1, or less than or equal to 10.
-        </p>
-
-        <button onclick="mathRandomBtn()">Randomize</button>
-
-        <p id="mathRandom">0</p>
-    </div>
-
-    <!-- =============================================================================================================== -->
-    <!-- =============================================================================================================== -->
-
-    <script>
-        function myFunction1() {
-            var x = document.getElementById("mySelect").value;
-            document.getElementById("demo1").innerHTML = "You selected: " + x;
-        }
-
-        //=============================================================================
-
-        function myFunction2() {
-            var person = prompt("Please enter your name");
-            if (person != null) {
-                document.getElementById("demo2").innerHTML =
-                    "Hello " + person + "! How are you today?";
-            }
-        }
-
-        //=============================================================================
-
-        function addBy() {
-            num1 = document.getElementById("firstNumber").value;
-            num2 = document.getElementById("secondNumber").value;
-            document.getElementById("result").innerHTML = +num1 + +num2;
-        }
-
-        function subtractBy() {
-            num1 = document.getElementById("firstNumber").value;
-            num2 = document.getElementById("secondNumber").value;
-            document.getElementById("result").innerHTML = num1 - num2;
-        }
-
-        function multiplyBy() {
-            num1 = document.getElementById("firstNumber").value;
-            num2 = document.getElementById("secondNumber").value;
-            document.getElementById("result").innerHTML = num1 * num2;
-        }
-
-        function divideBy() {
-            num1 = document.getElementById("firstNumber").value;
-            num2 = document.getElementById("secondNumber").value;
-            document.getElementById("result").innerHTML = num1 / num2;
-        }
-
-        //=============================================================================
-
-        var cars1 = ["Ford", "Lexus", "Jeep", "Dodge", "Honda"];
-        var text = "";
-        for (i = 0; i < cars1.length; i++) {
-            text += cars1[i] + "<br>";
-        }
-        document.getElementById("loop1").innerHTML = text;
-
-        var cars2 = ["Ford", "Lexus", "Jeep", "Dodge", "Honda"];
-        var i = 2;
-        var len = cars2.length;
-        var text = "";
-
-        for (; i < len; i++) {
-            text += cars2[i] + "<br>";
-        }
-
-        document.getElementById("loop2").innerHTML = text;
-
-        var text = "";
-        var i;
-        for (i = 0; i < 10; i++) {
-            if (i === 3) { break; }
-            text += "10 > " + i + "<br>";
-        }
-        document.getElementById("loopBreak").innerHTML = text;
-
-        //=============================================================================
-
-
-        if (new Date().getHours() < 18) {
-            document.getElementById("ifElse1").innerHTML = "Good day!";
-        }
-        else {
-            document.getElementById("ifElse1").innerHTML = "Good night!";
-        }
-
-        var time = new Date().getHours();
-        if (time < 12) {
-            greeting = "Good morning!";
-        } else if (time < 18) {
-            greeting = "Good afternoon!";
-        } else {
-            greeting = "Good evening!";
-        }
-        document.getElementById("ifElse2").innerHTML = greeting;
-
-        //=============================================================================
-
-        var day;
-        switch (new Date().getDay()) {
-            case 0:
-                day = "Sunday";
-                break;
-            case 1:
-                day = "Monday";
-                break;
-            case 2:
-                day = "Tuesday";
-                break;
-            case 3:
-                day = "Wednesday";
-                break;
-            case 4:
-                day = "Thursday";
-                break;
-            case 5:
-                day = "Friday";
-                break;
-            case 6:
-                day = "Saturday";
-        }
-        document.getElementById("todayIs").innerHTML = "Today is " + day;
-
-        var text;
-        switch (new Date().getDay()) {
-            case 6:
-                text = "Today is Saturday";
-                break;
-            case 0:
-                text = "Today is Sunday";
-                break;
-            default:
-                text = "Looking forward to the Weekend";
-        }
-        document.getElementById("defaultDay").innerHTML = text;
-
-        var text;
-        switch (new Date().getDay()) {
-            case 4:
-            case 5:
-                text = "Soon it is Weekend";
-                break;
-            case 0:
-            case 6:
-                text = "It is Weekend";
-                break;
-            default:
-                text = "Looking forward to the Weekend";
-        }
-        document.getElementById("commonDay").innerHTML = text;
-
-        //=============================================================================
-
-        function mathRandomBtn() {
-            document.getElementById("mathRandom").innerHTML = Math.floor(Math.random() * 10) + 1;
-        }
-    </script>
 </body>
 
 </html>

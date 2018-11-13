@@ -1,8 +1,25 @@
-.navBar {
+#blueFrame {
+    background-color: #00AEEF;
     overflow: hidden;
-    background-color: red;
-    padding: 20px 20px;
-    margin: 0px 0px 5px 0px;
+  }
+  
+  #whiteArea {
+    background-color: white;
+    margin: 50px;
+    padding: 20px;
+  }
+  
+  .grayTextBox {
+    color: #00AEEF;
+    background-color: #414042;
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+  }
+  .navBar {
+    overflow: hidden;
+    background-color: #414042;
+    padding: 20px;
+    margin: 0px 0px 15px 0px;
 }
 
 .navBar a {
@@ -14,7 +31,7 @@
 }
 
 .navBar a.active {
-    background-color: blue;
+    background-color: red;
     padding: 20px 20px;
 }
 
@@ -30,6 +47,7 @@ p {
 
 h3 {
     font-family: Futura;
+    color: #00AEEF;
 }
 
 li {
@@ -38,7 +56,11 @@ li {
 
 .container{
     border: solid red 2px;
-    margin-bottom: 5px;
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #414042;
+    overflow: hidden;
 }
 
 #panel, #flip {

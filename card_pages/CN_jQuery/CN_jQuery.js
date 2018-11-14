@@ -171,3 +171,11 @@ $(document).ready(function(){
         $(".setCSSex").css("background-color", "yellow");
     });
 });
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("#multiPropsBtn").click(function(){
+        $(".multiPropsEX").css({"background-color": "yellow", "color": "black", "font-size": "200%"});
+    });
+});

@@ -179,3 +179,14 @@ $(document).ready(function(){
         $(".multiPropsEX").css({"background-color": "yellow", "color": "black", "font-size": "200%"});
     });
 });
+
+// =================================================================================
+
+$(document).ready(function(){
+    $("#dimensionsBtn").click(function(){
+        var txt = "";
+        txt += "Width of div: " + $("#dimensionsEX").width() + "</br>";
+        txt += "Height of div: " + $("#dimensionsEX").height();
+        $("#dimensionsEX").html(txt);
+    });
+});

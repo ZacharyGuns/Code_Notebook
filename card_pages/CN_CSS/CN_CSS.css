@@ -94,3 +94,11 @@ p {
 #lightgray {
     background-color:LightGray;
 }
+
+#redText {
+    color: red;
+}
+
+#yellowText {
+    color: yellow;
+}

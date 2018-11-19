@@ -62,3 +62,35 @@ p {
     background-color: #414042;
     overflow: hidden;
 }
+
+#tomato {
+    background-color:Tomato;
+}
+
+#orange {
+    background-color:Orange;
+}
+
+#dodgerblue {
+    background-color:DodgerBlue;
+}
+
+#mediumseagreen {
+    background-color:MediumSeaGreen;
+}
+
+#gray {
+    background-color:Gray;
+}
+
+#slateblue {
+    background-color:SlateBlue;
+}
+
+#violet {
+    background-color:Violet;
+}
+
+#lightgray {
+    background-color:LightGray;
+}

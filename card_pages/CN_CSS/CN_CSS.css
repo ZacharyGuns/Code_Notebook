@@ -149,3 +149,9 @@ p {
     background-color: red; /* For browsers that do not support gradients */
     background-image: repeating-linear-gradient(90deg,red,yellow 7%,green 10%); /* Standard syntax (must be last) */
 }
+
+#grad9 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(red, yellow, green); /* Standard syntax (must be last) */
+}

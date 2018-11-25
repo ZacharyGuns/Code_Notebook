@@ -103,6 +103,8 @@ p {
     color: yellow;
 }
 
+/* ========================================================================================== */
+
 #grad1 {
     height: 200px;
     background-color: red; /* For browsers that do not support gradients */
@@ -154,4 +156,10 @@ p {
     height: 200px;
     background-color: red; /* For browsers that do not support gradients */
     background-image: radial-gradient(red, yellow, green); /* Standard syntax (must be last) */
+}
+
+/* ========================================================================================== */
+
+h2 {
+    text-shadow: 2px 2px red;
 }

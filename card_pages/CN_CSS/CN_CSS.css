@@ -160,6 +160,11 @@ p {
 
 /* ========================================================================================== */
 
-h2 {
+#textShadow1 {
     text-shadow: 2px 2px red;
+}
+
+#textShadow2 {
+    color: red;
+    text-shadow: 2px 2px 5px white;
 }

@@ -168,3 +168,8 @@ p {
     color: red;
     text-shadow: 2px 2px 5px white;
 }
+
+#textShadow3 {
+    color: red;
+    text-shadow: 0 0 5px white;
+}

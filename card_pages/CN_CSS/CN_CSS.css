@@ -173,3 +173,17 @@ p {
     color: red;
     text-shadow: 0 0 5px white;
 }
+
+/* ========================================================================================== */
+
+#transitionEX {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+#transitionEX:hover {
+    width: 300px;
+}

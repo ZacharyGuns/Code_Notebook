@@ -61,9 +61,9 @@ p {
 
 /* ============================================================================= */
 
-#div1 {
-    width: 350px;
-    height: 70px;
+#dropBox {
+    width: 178px;
+    height: 101px;
     padding: 10px;
-    border: 1px solid #aaaaaa;
+    border: 5px solid #aaaaaa;
 }

@@ -154,21 +154,29 @@
             <div class="container">
                 <h3>Web Storage</h3>
 
+                <h4>localStorage Object</h4>
+                <p>The following example counts the number of times a user has clicked a button. In this code the value string
+                    is converted to a number to be able to increase the counter:</p>
 
-            </div>
-
-            <!-- ========================================================================================== -->
-
-            <div class="container">
-                <h3>Web Workers</h3>
-
-                <p>The example below creates a simple web worker that count numbers in the background:</p>
-
-                <p>Count numbers:
-                    <output id="result"></output>
+                <p>
+                    <button onclick="clickCounter1()" type="button">Click me!</button>
                 </p>
-                <button onclick="startWorker()">Start Worker</button>
-                <button onclick="stopWorker()">Stop Worker</button>
+                <div id="result1"></div>
+                <p>Click the button to see the counter increase.</p>
+                <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+
+                <h4>seesionStorage Object</h4>
+
+                <p>The sessionStorage object is equal to the localStorage object, except that it stores the data for only one
+                    session. The data is deleted when the user closes the specific browser tab.</p>
+                <p>The following example counts the number of times a user has clicked a button, in the current session:</p>
+
+                <p>
+                    <button onclick="clickCounter2()" type="button">Click me!</button>
+                </p>
+                <div id="result2"></div>
+                <p>Click the button to see the counter increase.</p>
+                <p>Close the browser tab (or window), and try again, and the counter is reset.</p>
             </div>
         </div>
     </div>

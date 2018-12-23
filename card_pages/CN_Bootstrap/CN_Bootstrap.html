@@ -246,6 +246,44 @@
                     </a>
                 </p>
             </div>
+
+            <!-- ===================================================================================== -->
+
+            <div class="container">
+                <h3>Forms</h3>
+
+                <h2>Vertical (basic) form</h2>
+
+                <p>Bootstrap provides three types of form layouts:</p>
+
+                <ul>
+                    <li>Vertical form (this is default)</li>
+                    <li>Horizontal form</li>
+                    <li>Inline form</li>
+                </ul>
+
+                <p>Standard rules for all three form layouts:</p>
+                     
+                <ul>
+                    <li>Wrap labels and form controls in div class="form-group" (needed for optimum spacing)</li>
+                    <li>Add class .form-control to all textual input, textarea, and select elements</li>
+                </ul>
+
+                <form action="/action_page.php">
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="remember"> Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+            </div>
         </div>
     </div>
 </body>

@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Code_NoteBook: Materialize</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 <body>
@@ -31,18 +37,44 @@
             </div>
 
             <div class="container">
-                <h3>Drop Downs</h3>
-            </div>
+                <h3>Autocomplete</h3>
 
-            <div class="container">
-                <h3>For Loops</h3>
-            </div>
+                <p>Add an autocomplete dropdown below your input to suggest possible values in your form. You can populate the
+                    list of autocomplete options dynamically as well.
+                </p>
 
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" id="autocomplete-input" class="autocomplete">
+                                <label for="autocomplete-input">Autocomplete</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- =============================================================================================================== -->
             <!-- =============================================================================================================== -->
 
             <script>
+                // document.addEventListener('DOMContentLoaded', function () {
+                //     var elems = document.querySelectorAll('.autocomplete');
+                //     var instances = M.Autocomplete.init(elems, options);
+                // });
 
+
+                // Or with jQuery
+
+                $(document).ready(function () {
+                    $('input.autocomplete').autocomplete({
+                        data: {
+                            "Apple": null,
+                            "Microsoft": null,
+                            "Google": 'https://placehold.it/250x250'
+                        },
+                    });
+                });
             </script>
         </div>
     </div>

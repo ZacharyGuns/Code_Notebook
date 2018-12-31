@@ -187,6 +187,16 @@
                 <p id="mathRandom">0</p>
             </div>
 
+            <div class="container">
+                <h3>Booleans</h3>
+
+                <p>Display the value of Boolean(10 > 9):</p>
+
+                <button onclick="booleanBtn()">Try it</button>
+
+                <p id="booleanEX"></p>
+            </div>
+
             <!-- =============================================================================================================== -->
             <!-- =============================================================================================================== -->
 
@@ -339,6 +349,12 @@
 
                 function mathRandomBtn() {
                     document.getElementById("mathRandom").innerHTML = Math.floor(Math.random() * 10) + 1;
+                }
+
+                //=============================================================================
+
+                function booleanBtn() {
+                    document.getElementById("booleanEX").innerHTML = Boolean(10 > 9);
                 }
             </script>
         </div>

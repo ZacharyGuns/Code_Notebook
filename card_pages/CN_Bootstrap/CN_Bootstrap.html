@@ -436,7 +436,7 @@
                 </form>
 
                 <p>The form below contains two dropdown menus (select lists):</p>
-                
+
                 <form>
                     <div class="form-group">
                         <label for="sel1">Select list (select one):</label>
@@ -458,8 +458,22 @@
                     </div>
                 </form>
             </div>
+
+            <!-- ===================================================================================== -->
+
+            <div class="container">
+                <h2>Popover</h2>
+
+                <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+            </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </body>
 
 </html>

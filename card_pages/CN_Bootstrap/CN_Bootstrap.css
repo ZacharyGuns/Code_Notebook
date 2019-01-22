@@ -85,3 +85,28 @@ tbody {
 #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
 #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
 #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+
+.col-sm-3 {
+    border-style: solid;
+    border-color: whitesmoke;
+    background-color: yellowgreen;
+}
+.col-sm-4 {
+    border-style: solid;
+    border-color: whitesmoke;
+    background-color: royalblue;
+}
+.col-sm-6 {
+    border-style: solid;
+    border-color: whitesmoke;
+    background-color: grey;
+}
+.col-sm-8{
+    border-style: solid;
+    border-color: whitesmoke;
+    background-color: hotpink;
+}
+.col-sm-9{
+    border-style: solid;
+    border-color: whitesmoke;
+}

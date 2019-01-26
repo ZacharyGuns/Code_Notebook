@@ -49,3 +49,12 @@ h3 {
     font-family: Futura;
     color: #00AEEF;
 }
+
+.container{
+    border: solid red 2px;
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #414042;
+    overflow: hidden;
+}

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var gifs = [
-        "zebra", "dinosaur", "league of legends", "overwatch", "pokemon"
+        "zebra", "shark", "wolf", "tiger", "dinosaur", "league of legends", "overwatch", "pokemon"
     ];
   
     // function to make buttons and add to page

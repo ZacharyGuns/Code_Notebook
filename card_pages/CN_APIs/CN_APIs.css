@@ -67,11 +67,11 @@ body {
     background: #eee;
   }
   
-  #animals {
+  #gifs {
     width: 70%;
   }
   
-  .animal-item {
+  .gif-item {
     float: left;
     padding: 10px;
   }

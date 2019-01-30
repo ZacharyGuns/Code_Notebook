@@ -87,3 +87,40 @@ $(document).ready(function() {
     populateButtons(gifs, "gif-button", "#gif-buttons");
   });
   
+// =====================================================================================================
+
+  $(document).ready(function() {
+
+    var images = [
+        "zebra", "shark", "wolf", "tiger", "dinosaur", "league of legends", "overwatch", "pokemon"
+    ];
+  
+    // function to make buttons and add to page
+    function populateButtons(arrayToUse, classToAdd, areaToAddTo) {
+      $(areaToAddTo).empty();
+  
+      for (var i = 0; i < arrayToUse.length; i++) {
+        var a = $("<button>");
+        a.addClass(classToAdd);
+        a.attr("data-type", arrayToUse[i]);
+        a.text(arrayToUse[i]);
+        $(areaToAddTo).append(a);
+      }
+  
+    }
+
+  
+    $("#add-image").on("click", function(event) {
+      event.preventDefault();
+      var newImage = $("input").eq(0).val();
+  
+      if (newImage.length > 2) {
+        images.push(newImage);
+      }
+  
+      populateButtons(images, "image-button", "#image-buttons");
+  
+    });
+  
+    populateButtons(images, "image-button", "#image-buttons");
+  });

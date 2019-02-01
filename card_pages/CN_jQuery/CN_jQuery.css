@@ -35,8 +35,6 @@
     padding: 20px 20px;
 }
 
-/* ========================================================================================== */
-
 h1 {
     color: red;
 }
@@ -50,10 +48,6 @@ h3 {
     color: #00AEEF;
 }
 
-li {
-    font-family: Futura;
-}
-
 .container{
     border: solid red 2px;
     padding: 0px 15px 0px 15px;
@@ -61,6 +55,15 @@ li {
     color: white;
     background-color: #414042;
     overflow: hidden;
+}
+
+
+/* ========================================================================================== */
+
+
+
+li {
+    font-family: Futura;
 }
 
 #panel, #flip {

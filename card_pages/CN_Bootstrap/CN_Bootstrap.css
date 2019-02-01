@@ -35,24 +35,17 @@
     padding: 20px 20px;
 }
 
-/* ========================================================================================== */
-
 h1 {
-    color: black;
+    color: red;
+}
+
+p {
+    font-family: Futura;
 }
 
 h3 {
     font-family: Futura;
     color: #00AEEF;
-}
-
-h4 {
-    font-family: Futura;
-    color: #00AEEF;
-}
-
-p {
-    font-family: Futura;
 }
 
 .container{
@@ -63,6 +56,8 @@ p {
     background-color: #414042;
     overflow: hidden;
 }
+
+
 
 /* ============================================================================= */
 

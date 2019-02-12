@@ -35,6 +35,8 @@
     padding: 20px 20px;
 }
 
+/* ========================================================================================== */
+
 h1 {
     color: red;
 }
@@ -46,6 +48,14 @@ p {
 h3 {
     font-family: Futura;
     color: #00AEEF;
+}
+
+form {
+    font-family: Futura;
+}
+
+#zebra {
+    width: 300px;
 }
 
 .container{

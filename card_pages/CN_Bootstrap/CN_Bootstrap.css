@@ -127,3 +127,7 @@ tbody {
 .badge {
     background-color :rgb(190, 190, 190);
 }
+
+#updatingBtn {
+    background-color: lightskyblue;
+}

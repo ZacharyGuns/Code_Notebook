@@ -35,13 +35,7 @@ $(document).ready(function(){
 
 var badgeCount = 0;
 
-$('.add').click(function (){
+$('#add').click(function (){
   badgeCount ++;
   $('#badgeCount').html(badgeCount).css('display', 'block');
-}); 
-
-$('.clear').click(function() {
-  badgeCount = 0;
-  $('#badgeCount').html('').css('display', 'none');
-  $('#cartBadge').html('');
 }); 

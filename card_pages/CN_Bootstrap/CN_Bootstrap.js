@@ -39,3 +39,8 @@ $('#add').click(function (){
   badgeCount ++;
   $('#badgeCount').html(badgeCount).css('display', 'inline');
 }); 
+$('.clear').click(function() {
+  badgeCount = 0;
+  $('#badgeCount').html('').css('display', 'none');
+  $('#updatingBadge').html('');
+}); 

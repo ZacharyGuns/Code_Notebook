@@ -37,5 +37,5 @@ var badgeCount = 0;
 
 $('#add').click(function (){
   badgeCount ++;
-  $('#badgeCount').html(badgeCount).css('display', 'block');
+  $('#badgeCount').html(badgeCount).css('display', 'inline');
 }); 

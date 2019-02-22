@@ -46,5 +46,7 @@ $('.clear').click(function() {
 }); 
 $('.reduceBadge').click(function() {
   badgeCount --;
-  $('#badgeCount').html(badgeCount).css('display', 'inline');
+  if (badgeCount > 0)
+    $('#badgeCount').html(badgeCount).css('display', 'inline');
+  else (badgeCount = 0);
 });

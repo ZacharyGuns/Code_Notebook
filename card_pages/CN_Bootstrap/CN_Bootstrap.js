@@ -44,3 +44,7 @@ $('.clear').click(function() {
   $('#badgeCount').html('').css('display', 'none');
   $('#updatingBadge').html('');
 }); 
+$('.reduceBadge').click(function() {
+  badgeCount --;
+  $('#badgeCount').html(badgeCount).css('display', 'inline');
+});

@@ -218,3 +218,22 @@ p {
     width: 200px;
     float: none;
 }
+
+.zebra4 {
+    width: 200px;
+    float: right;
+}
+
+.zebra5 {
+    width: 200px;
+    float: right;
+}
+
+.greenBorders {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+}
+
+.clearfix {
+    overflow: auto;
+  }

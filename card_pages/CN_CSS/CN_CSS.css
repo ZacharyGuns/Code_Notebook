@@ -213,3 +213,8 @@ p {
     float: left;
     margin-right: 10px;
 }
+
+.zebra3 {
+    width: 200px;
+    float: none;
+}

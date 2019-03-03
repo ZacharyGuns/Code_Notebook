@@ -238,3 +238,14 @@ p {
 .clearfix {
     overflow: auto;
   }
+
+/* ========================================================================================== */
+
+body {
+    counter-reset: section;
+}
+  
+#counterEx::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+}

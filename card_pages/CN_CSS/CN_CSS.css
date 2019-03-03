@@ -245,7 +245,7 @@ body {
     counter-reset: section;
 }
   
-#counterEx::before {
+.counterEx::before {
     counter-increment: section;
     content: "Section " counter(section) ": ";
 }

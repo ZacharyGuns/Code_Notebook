@@ -232,6 +232,7 @@ p {
 .greenBorders {
     border: 3px solid #4CAF50;
     padding: 5px;
+    margin-bottom: 15px;
 }
 
 .clearfix {

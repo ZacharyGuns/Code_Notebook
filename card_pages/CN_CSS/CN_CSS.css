@@ -249,3 +249,14 @@ body {
     counter-increment: section;
     content: "Section " counter(section) ": ";
 }
+
+/* ========================================================================================== */
+
+#resizeEx {
+    border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    resize: both;
+    overflow: auto;
+    margin-bottom: 15px;
+  }

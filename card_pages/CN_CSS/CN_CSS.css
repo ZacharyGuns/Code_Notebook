@@ -252,11 +252,20 @@ body {
 
 /* ========================================================================================== */
 
-#resizeEx {
+#resizeEx1 {
     border: 2px solid;
     padding: 20px; 
     width: 300px;
     resize: both;
+    overflow: auto;
+    margin-bottom: 15px;
+  }
+
+#resizeEx2 {
+    border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    resize: vertical;
     overflow: auto;
     margin-bottom: 15px;
   }

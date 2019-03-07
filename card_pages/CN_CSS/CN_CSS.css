@@ -269,3 +269,12 @@ body {
     overflow: auto;
     margin-bottom: 15px;
   }
+
+#resizeEx3 {
+    border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    resize: horizontal;
+    overflow: auto;
+    margin-bottom: 15px;
+  }

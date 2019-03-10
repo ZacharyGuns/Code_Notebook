@@ -297,3 +297,16 @@ body {
 .wordBr3 {
     word-break: break-all;
   }
+
+/* ========================================================================================== */
+
+.Zindex {
+    position: relative;
+}
+
+#zIndexImg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+  }

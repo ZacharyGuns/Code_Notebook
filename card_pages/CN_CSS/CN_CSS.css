@@ -392,3 +392,17 @@ body {
     float: left;
     object-fit: cover;
 }
+
+/* ========================================================================================== */
+
+#opacity1 {
+    height: 150px;
+}
+
+#opacity2 {
+    height: 150px;
+}
+
+#opacity3 {
+    height: 150px;
+}

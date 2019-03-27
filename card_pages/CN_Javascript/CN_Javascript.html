@@ -31,7 +31,7 @@
             </div>
 
             <!-- =============================================================================================================== -->
-            
+
             <div class="container">
                 <h3>Drop Downs</h3>
 
@@ -50,7 +50,7 @@
             </div>
 
             <!-- =============================================================================================================== -->
-            
+
             <div class="container">
                 <h3>Prompts</h3>
 
@@ -61,7 +61,7 @@
             </div>
 
             <!-- =============================================================================================================== -->
-            
+
             <div class="container">
                 <h3>Operators</h3>
 
@@ -83,7 +83,7 @@
             </div>
 
             <!-- =============================================================================================================== -->
-            
+
             <div class="container">
                 <h3>For Loops</h3>
 
@@ -111,7 +111,7 @@
             </div>
 
             <!-- =============================================================================================================== -->
-            
+
             <div class="container">
                 <h3>Conditionals</h3>
 
@@ -200,9 +200,16 @@
             </div>
 
             <!-- =============================================================================================================== -->
-            
+
             <div class="container">
                 <h3>"this" Keyword</h3>
+
+                <p>In this example,
+                    <b>this</b> represents the
+                    <b>person</b> object.</p>
+                <p>Because the person object "owns" the fullName method.</p>
+
+                <p id="thisKeywordEx"></p>
             </div>
 
             <!-- =============================================================================================================== -->
@@ -364,6 +371,22 @@
                 function booleanBtn() {
                     document.getElementById("booleanEX").innerHTML = Boolean(10 > 9);
                 }
+
+                //=============================================================================
+
+                // Create an object:
+                var person = {
+                    firstName: "Zach",
+                    lastName: "Guns",
+                    id: 5566,
+                    fullName: function () {
+                        return this.firstName + " " + this.lastName;
+                    }
+                };
+
+                // Display data from the object:
+                document.getElementById("thisKeywordEx").innerHTML = person.fullName();
+
             </script>
         </div>
     </div>

@@ -216,6 +216,12 @@
 
             <div class="container">
                 <h3>Scope</h3>
+
+                <p>Outside myScopeFunction() carName is undefined.</p>
+
+                <p id="scope1"></p>
+
+                <p id="scope2"></p>
             </div>
 
             <!-- =============================================================================================================== -->
@@ -393,6 +399,15 @@
                 // Display data from the object:
                 document.getElementById("thisKeywordEx").innerHTML = person.fullName();
 
+                //=============================================================================
+
+                myScopeFunction();
+
+                function myScopeFunction() {
+                    var carName = "Volvo";
+                    document.getElementById("scope1").innerHTML = typeof carName + " " + carName;
+                }
+                document.getElementById("scope2").innerHTML = typeof carName;
             </script>
         </div>
     </div>

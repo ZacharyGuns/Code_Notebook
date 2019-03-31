@@ -228,6 +228,8 @@
 
             <div class="container">
                 <h3>Errors</h3>
+
+                <p id="errorsEx"></p>
             </div>
 
             <!-- =============================================================================================================== -->
@@ -414,6 +416,15 @@
                     document.getElementById("scope1").innerHTML = typeof carName + " " + carName;
                 }
                 document.getElementById("scope2").innerHTML = typeof carName;
+
+                //=============================================================================
+
+                try {
+                    adddlert("Welcome guest!");
+                }
+                catch (err) {
+                    document.getElementById("errorsEx").innerHTML = err.message;
+                }
             </script>
         </div>
     </div>

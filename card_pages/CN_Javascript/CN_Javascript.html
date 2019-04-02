@@ -242,6 +242,19 @@
 
             <div class="container">
                 <h3>Performance</h3>
+
+                <p>Loops are often used in programming. Each statement in a loop, including the for statement, is executed for
+                    each iteration of the loop. Statements or assignments that can be placed outside the loop will make the
+                    loop run faster.</p>
+
+                <p>Poor performance:</p>
+                <code>var i;</code><br>
+                <code>for (i = 0; i < arr.length; i++) {</code>
+                <br>
+                <p>Good performance:</p>
+                <code>var i;</code><br>
+                <code>var l = arr.length;</code><br>
+                <code>for (i = 0; i < l; i++) {</code>
             </div>
 
             <!-- =============================================================================================================== -->

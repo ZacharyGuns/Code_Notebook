@@ -248,13 +248,19 @@
                     loop run faster.</p>
 
                 <p>Poor performance:</p>
-                <code>var i;</code><br>
+                <code>var i;</code>
+                <br>
                 <code>for (i = 0; i < arr.length; i++) {</code>
                 <br>
                 <p>Good performance:</p>
-                <code>var i;</code><br>
-                <code>var l = arr.length;</code><br>
+                <code>var i;</code>
+                <br>
+                <code>var l = arr.length;</code>
+                <br>
                 <code>for (i = 0; i < l; i++) {</code>
+
+                <p>The following statement is presented using good performance code:</p>
+                <p id="performanceEx"></p>
             </div>
 
             <!-- =============================================================================================================== -->
@@ -468,6 +474,12 @@
                         message.innerHTML = "Input is " + err;
                     }
                 }
+
+                //=============================================================================
+
+                var obj;
+                obj = document.getElementById("performanceEx");
+                obj.innerHTML = " Hello world!";
             </script>
         </div>
     </div>

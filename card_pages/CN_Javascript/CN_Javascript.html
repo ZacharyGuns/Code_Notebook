@@ -307,6 +307,10 @@
 
             <div class="container">
                 <h3>Function Apply()</h3>
+
+                <p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+
+                <p id="funcApplyEx"></p>
             </div>
 
             <!-- =============================================================================================================== -->
@@ -531,6 +535,20 @@
 
                 var x = 0;
                 document.getElementById("mistakesEx").innerHTML = Boolean(x == 10);
+
+                //=============================================================================
+
+                var person = {
+                    fullName: function () {
+                        return this.firstName + " " + this.lastName;
+                    }
+                }
+                var person1 = {
+                    firstName: "John",
+                    lastName: "Doe"
+                }
+                var x = person.fullName.apply(person1);
+                document.getElementById("funcApplyEx").innerHTML = x; 
             </script>
         </div>
     </div>

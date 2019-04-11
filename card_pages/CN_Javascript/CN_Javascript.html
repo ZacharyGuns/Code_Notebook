@@ -317,6 +317,11 @@
 
             <div class="container">
                 <h3>Function Call()</h3>
+
+                <p>This example calls the fullName method of person, using it on person1:
+                </p>
+
+                <p id="funcCallEx"></p>
             </div>
 
             <!-- =============================================================================================================== -->
@@ -554,7 +559,25 @@
                     lastName: "Doe"
                 }
                 var x = person.fullName.apply(person1);
-                document.getElementById("funcApplyEx").innerHTML = x; 
+                document.getElementById("funcApplyEx").innerHTML = x;
+
+                //=============================================================================
+
+                var person = {
+                    fullName: function () {
+                        return this.firstName + " " + this.lastName;
+                    }
+                }
+                var person1 = {
+                    firstName: "John",
+                    lastName: "Doe"
+                }
+                var person2 = {
+                    firstName: "Mary",
+                    lastName: "Doe"
+                }
+                var x = person.fullName.call(person1);
+                document.getElementById("funcCallEx").innerHTML = x; 
             </script>
         </div>
     </div>

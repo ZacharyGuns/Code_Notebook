@@ -248,3 +248,17 @@ var person2 = {
 }
 var x = person.fullName.call(person1);
 document.getElementById("funcCallEx").innerHTML = x; 
+
+//=============================================================================
+
+var person = {
+    firstName: "John",
+    lastName : "Doe",
+    bodyHeight: "6 feet 3 inches",
+    eyeColor: "hazel",
+    get hisHeight() {
+      return this.bodyHeight;
+    }
+  };
+  // Display data from the object using a getter:
+  document.getElementById("getterEx").innerHTML = person.hisHeight;

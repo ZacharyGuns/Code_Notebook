@@ -247,18 +247,25 @@ var person2 = {
     lastName: "Doe"
 }
 var x = person.fullName.call(person1);
-document.getElementById("funcCallEx").innerHTML = x; 
+document.getElementById("funcCallEx").innerHTML = x;
 
 //=============================================================================
 
 var person = {
     firstName: "John",
-    lastName : "Doe",
+    lastName: "Doe",
     bodyHeight: "6 feet 3 inches",
-    eyeColor: "hazel",
+    eyeColor: "N/A",
     get hisHeight() {
-      return this.bodyHeight;
+        return this.bodyHeight;
+    },
+    set colorOfEyes(value) {
+        this.eyeColor = value;
     }
-  };
-  // Display data from the object using a getter:
-  document.getElementById("getterEx").innerHTML = person.hisHeight;
+};
+// Display data from the object using a getter:
+document.getElementById("getterEx").innerHTML = person.hisHeight;
+// Set a property using set:
+person.colorOfEyes = "hazel";
+// Display data from the object using a setter:
+document.getElementById("setterEx").innerHTML = person.eyeColor;

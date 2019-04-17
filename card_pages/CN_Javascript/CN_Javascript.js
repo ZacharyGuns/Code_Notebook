@@ -269,3 +269,14 @@ document.getElementById("getterEx").innerHTML = person.hisHeight;
 person.colorOfEyes = "hazel";
 // Display data from the object using a setter:
 document.getElementById("setterEx").innerHTML = person.eyeColor;
+
+//=============================================================================
+
+var man = {
+    firstname:"John",
+    lastname:"Doe",
+    age:50,
+    eyecolor:"blue"
+  };
+  
+  document.getElementById("objPropertyEx").innerHTML = man.firstname + " is " + man.age + " years old.";

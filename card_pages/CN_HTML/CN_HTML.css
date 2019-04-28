@@ -89,3 +89,7 @@ p {
     border: 2px solid #00AEEF;
     border-collapse: collapse;
   }
+
+  table {
+    margin-bottom: 15px;
+  }

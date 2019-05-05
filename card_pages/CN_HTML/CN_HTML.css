@@ -93,3 +93,8 @@ p {
   table {
     margin-bottom: 15px;
   }
+
+  iframe {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }

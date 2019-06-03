@@ -980,10 +980,17 @@
                 </div>
 
                 <p>Equal Widths</p>
-                <div class="d-flex">
-                    <div class="p-2 bg-info flex-fill">Flex item 1</div>
-                    <div class="p-2 bg-warning flex-fill">Flex item 2</div>
-                    <div class="p-2 bg-primary flex-fill">Flex item 3</div>
+                <p>Use .flex-fill on flex items to force them into equal widths:</p>
+                <div class="d-flex mb-3">
+                    <div class="p-2 flex-fill bg-info">Flex item 1</div>
+                    <div class="p-2 flex-fill bg-warning">Flex item 2</div>
+                    <div class="p-2 flex-fill bg-primary">Flex item 3</div>
+                </div>
+                <p>Example without .flex-fill:</p>
+                <div class="d-flex mb-3 bg-secondary">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
                 </div>
             </div>
         </div>

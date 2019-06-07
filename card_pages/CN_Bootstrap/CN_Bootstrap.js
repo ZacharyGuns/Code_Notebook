@@ -5,6 +5,12 @@ $(document).ready(function () {
 // ===========================================================================================================
 
 $(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+
+// ===========================================================================================================
+
+$(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $("#myTable tr").filter(function() {

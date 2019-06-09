@@ -131,3 +131,18 @@ tbody {
 #updatingBtn {
     background-color: lightskyblue;
 }
+
+.modal-header {
+    background-color: lightslategray;
+    color: black;
+  }
+
+  .modal-body {
+    background-color: white;
+    color: black;
+  }
+
+  .modal-footer {
+    background-color: lightslategray;
+    color: black;
+  }
